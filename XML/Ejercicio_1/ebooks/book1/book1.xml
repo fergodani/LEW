@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://openebook.org/namespaces/oeb-package/1.0/">
+  <metadata>
+    <!-- Metadatos del libro -->
+    <dc-metadata xmlns:dc="http://purl.org/metadata/dublin_core">
+      <dc:title>Título del Libro</dc:title>
+      <dc:creator>Nombre del Autor</dc:creator>
+      <dc:language>es</dc:language>
+    </dc-metadata>
+  </metadata>
+  <manifest>
+    <!-- Lista de archivos y recursos del libro -->
+    <item id="cover" href="cover.html" media-type="text/html" />
+    <item id="chapter1" href="chapter1.html" media-type="text/html" />
+    <item id="chapter2" href="chapter2.html" media-type="text/html" />
+  </manifest>
+  <spine>
+    <!-- Orden de lectura de los elementos del libro -->
+    <itemref idref="cover" />
+    <itemref idref="chapter1" />
+    <itemref idref="chapter2" />
+  </spine>
+</package>

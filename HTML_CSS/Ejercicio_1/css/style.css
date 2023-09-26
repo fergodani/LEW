@@ -1,9 +1,10 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
 }
 
-ul {
+nav ul {
     list-style-type: none;
 }
 
@@ -36,13 +37,14 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
 main, header {
     margin: 1em;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 header section {
@@ -61,5 +63,9 @@ li img {
 }
 
 aside {
-    margin-right: 2em;
+    margin: 1em;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
