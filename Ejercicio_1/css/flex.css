@@ -1,48 +1,30 @@
-* {
-    margin: 0.5em;
-}
-body {
-    display: flex;
-    flex-direction: column;
-}
-
 main {
     display: flex;
     flex-direction: row;
-}
-
-nav {
-    background-color: black;
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-}
-
-/*002*/
-nav a {
-    float: inline-start;
-    color: white;
-    padding: 0.8em 1em;
-    text-decoration: none;
-    font-size: 20px;
+    gap: 2em;
 }
 
 main section {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    align-items: center;
 }
 
-main section section {
+header {
     display: flex;
     flex-direction: row;
-    gap: 5em;
+    align-items: center;
 }
 
-aside {
-    flex-shrink: 1;
+header section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+aside li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5em;
 }
