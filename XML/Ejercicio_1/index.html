@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Información del Libro</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/main.js"></script>
 </head>
 <body>
-    <input type="file" id="file-input">
-    <pre id="file-contents"></pre>
-    <h1>Información del Libro</h1>
-    <div id="book-info">
-        <!-- La información del libro se mostrará aquí -->
-    </div>
-
-    <script src="./js/main.js"></script>
+    
+    <h1>Librería</h1>
+    <main>
+        
+    </main>
+    <p>Añadir un libro: </p>
+      
+    <p><input type="file" id="archivoTexto" onchange="xml.leerArchivoTexto(this.files);"></p>
 </body>
 </html>
