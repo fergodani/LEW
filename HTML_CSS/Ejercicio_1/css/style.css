@@ -4,14 +4,13 @@ body {
     background-color: #f0f0f0;
 }
 
-nav ul {
-    list-style-type: none;
-}
+
 
 nav {
-    background-color: #333333;
+    background-color: #333;
     color: #fff;
     text-align: center;
+    padding: 0.5em;
 }
 
 
@@ -29,7 +28,16 @@ nav a {
 
 nav a:hover {
     background-color: white;
-    color: #333333;
+    color: #333;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
 }
 
 footer {
