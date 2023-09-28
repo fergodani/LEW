@@ -1,19 +1,37 @@
 main {
     display: flex;
     flex-direction: row;
-    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;    
 }
 
-main section {
+main section  {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-header {
+main > section + section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+main > table + section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, main > table + section article > section {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 2em;
 }
 
 header section {
@@ -28,3 +46,5 @@ aside li {
     align-items: center;
     gap: 1.5em;
 }
+
+

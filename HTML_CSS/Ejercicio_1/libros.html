@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Libros Favoritos</title>
-    <link rel="stylesheet" href="./css/libros.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/flex.css">
+    <link rel="stylesheet" href="./css/tabla.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
+
 <body>
     <nav>
         <h1>Mis Libros Favoritos</h1>
@@ -17,15 +21,17 @@
             <li><a href="libros.html">Literatura</a></li>
         </ul>
     </nav>
-    <main>
-        <!-- Géneros Literarios Favoritos -->
+    <header>
         <section>
             <h2>Mis Géneros Literarios Favoritos</h2>
-            <p>A lo largo de los años, he desarrollado un amor por varios géneros literarios, incluyendo ciencia ficción, fantasía, misterio y romance. Cada uno tiene su propio encanto y me ha llevado a explorar una amplia variedad de libros.</p>
+            <p>A lo largo de los años, he desarrollado un amor por varios géneros literarios, incluyendo ciencia
+                ficción, fantasía, misterio y romance. Cada uno tiene su propio encanto y me ha llevado a explorar una
+                amplia variedad de libros.</p>
         </section>
-
-        <!-- Tabla de Libros -->
+    </header>
+    <main>
         <table>
+            <caption>Lista de mis libros favoritos</caption>
             <thead>
                 <tr>
                     <th>Título</th>
@@ -40,13 +46,13 @@
                     <td>George Orwell</td>
                     <td>1949</td>
                     <td>
-                        <div class="rating">
+                        <section>
                             <span class="star">&#9733;</span>
                             <span class="star">&#9733;</span>
                             <span class="star">&#9733;</span>
                             <span class="star">&#9733;</span>
                             <span class="star">&#9734;</span>
-                        </div>
+                        </section>
                     </td>
                 </tr>
                 <tr>
@@ -54,13 +60,13 @@
                     <td>George R.R. Martin</td>
                     <td>1996</td>
                     <td>
-                        <div class="rating">
+                        <section>
                             <span class="star">&#9733;</span>
                             <span class="star">&#9733;</span>
                             <span class="star">&#9733;</span>
                             <span class="star">&#9733;</span>
                             <span class="star">&#9733;</span>
-                        </div>
+                        </section>
                     </td>
                 </tr>
                 <tr>
@@ -68,49 +74,94 @@
                     <td>Dan Brown</td>
                     <td>2003</td>
                     <td>
-                        <div class="rating">
+                        <section>
                             <span class="star">&#9733;</span>
                             <span class="star">&#9733;</span>
                             <span class="star">&#9733;</span>
                             <span class="star">&#9733;</span>
                             <span class="star">&#9733;</span>
-                        </div>
+                        </section>
                     </td>
                 </tr>
-                <!-- Puedes agregar más filas con libros aquí -->
             </tbody>
         </table>
         <section>
-            <h2>Lectura actual</h2>
-            <h3>Ciudad de Jade - Fonda Lee</h3>
-            <figure>
-                <img src="./multimedia/jade.jpg" alt="Ciudad de jade">
-            </figure>
-            <p>El jade es el alma de la isla de Kekon. Durante siglos, los kekoneses lo han extraído de las entrañas de la tierra, han comerciado con él, lo han robado y han matado por él. Honorables guerreros huesos verdes como la familia Kaul lo han empleado para aumentar sus habilidades mágicas y defender la isla de las invasiones extranjeras.
-                Ahora la guerra ha terminado y una nueva generación de la familia Kaul compite por el control de la floreciente capital de Kekon. Solo les preocupa proteger a los suyos, monopolizar el mercado de jade y defender los distritos que se hallan bajo su protección. En estos tiempos de cambio no hay lugar para las antiguas tradiciones.
-                Cuando aparece en las calles una nueva y poderosa droga que permite a cualquiera (incluso a los extranjeros) usar el jade, la creciente tensión entre la familia Kaul y sus rivales, la familia Ayt, estalla y transforma la ciudad en un campo de batalla. El resultado de esta guerra de clanes decidirá el destino de todos los huesos verdes y el futuro de la propia Kekon.</p>
-        </section>
-        <section>
-            <h2>Mejor lectura</h2>
-            <h3>El Camino de los Reyes - Brandon Sanderson</h3>
-            <figure>
-                <img src="./multimedia/camino.jpg" alt="El camino de los reyes">
-            </figure>
-            <p>El camino de los reyes es el primer volumen de «El Archivo de las Tormentas», el resultado de más de una década de construcción y escritura de universos, convertido en una obra maestra de la fantasía contemporánea en diez volúmenes. Con ella, Brandon Sanderson se postula como el autor del género que más lectores está ganando en todo el mundo.
+            <article>
+                <h2>Lectura actual</h2>
+                <h3>Ciudad de Jade - Fonda Lee</h3>
+                <section>
+                    <img src="./multimedia/jade.jpg" alt="Ciudad de jade">
+                    <p>El jade es el alma de la isla de Kekon. Durante siglos, los kekoneses lo han extraído de las
+                        entrañas
+                        de la tierra, han comerciado con él, lo han robado y han matado por él. Honorables guerreros
+                        huesos
+                        verdes como la familia Kaul lo han empleado para aumentar sus habilidades mágicas y defender la
+                        isla
+                        de las invasiones extranjeras.
+                        Ahora la guerra ha terminado y una nueva generación de la familia Kaul compite por el control de
+                        la
+                        floreciente capital de Kekon. Solo les preocupa proteger a los suyos, monopolizar el mercado de
+                        jade
+                        y defender los distritos que se hallan bajo su protección. En estos tiempos de cambio no hay
+                        lugar
+                        para las antiguas tradiciones.
+                        Cuando aparece en las calles una nueva y poderosa droga que permite a cualquiera (incluso a los
+                        extranjeros) usar el jade, la creciente tensión entre la familia Kaul y sus rivales, la familia
+                        Ayt,
+                        estalla y transforma la ciudad en un campo de batalla. El resultado de esta guerra de clanes
+                        decidirá el destino de todos los huesos verdes y el futuro de la propia Kekon.</p>
+                </section>
+            </article>
+            <article>
+                <h2>Mejor lectura</h2>
+                <h3>El Camino de los Reyes - Brandon Sanderson</h3>
+                <section>
+                    <p>El camino de los reyes es el primer volumen de «El Archivo de las Tormentas», el resultado de más
+                        de
+                        una
+                        década de construcción y escritura de universos, convertido en una obra maestra de la fantasía
+                        contemporánea en diez volúmenes. Con ella, Brandon Sanderson se postula como el autor del género
+                        que
+                        más
+                        lectores está ganando en todo el mundo.
 
-                Anhelo los días previos a la Última Desolación.
-                
-                Los días en que los Heraldos nos abandonaron y los Caballeros Radiantes se giraron en nuestra contra. Un tiempo en que aún había magia en el mundo y honor en el corazón de los hombres.
-                
-                El mundo fue nuestro, pero lo perdimos. Probablemente no hay nada más estimulante para las almas de los hombres que la victoria.
-                
-                ¿O tal vez fue la victoria una ilusión durante todo ese tiempo? ¿Comprendieron nuestros enemigos que cuanto más duramente luchaban, más resistíamos nosotros? Quizá vieron que el fuego y el martillo tan solo producían mejores espadas. Pero ignoraron el acero durante el tiempo suficiente para oxidarse.
-                
-                Hay cuatro personas a las que observamos. La primera es el médico, quien dejó de curar para convertirse en soldado durante la guerra más brutal de nuestro tiempo. La segunda es el asesino, un homicida que llora siempre que mata. La tercera es la mentirosa, una joven que viste un manto de erudita sobre un corazón de ladrona. Por último está el alto príncipe, un guerrero que mira al pasado mientras languidece su sed de guerra.
-                
-                El mundo puede cambiar. La potenciación y el uso de las esquirlas pueden aparecer de nuevo, la magia de los días pasados puede volver a ser nuestra. Esas cuatro personas son la clave.
-                
-                Una de ellas nos redimirá. Y una de ellas nos destruirá.</p>
+                        Anhelo los días previos a la Última Desolación.
+
+                        Los días en que los Heraldos nos abandonaron y los Caballeros Radiantes se giraron en nuestra
+                        contra. Un
+                        tiempo en que aún había magia en el mundo y honor en el corazón de los hombres.
+
+                        El mundo fue nuestro, pero lo perdimos. Probablemente no hay nada más estimulante para las almas
+                        de
+                        los
+                        hombres que la victoria.
+
+                        ¿O tal vez fue la victoria una ilusión durante todo ese tiempo? ¿Comprendieron nuestros enemigos
+                        que
+                        cuanto más duramente luchaban, más resistíamos nosotros? Quizá vieron que el fuego y el martillo
+                        tan
+                        solo producían mejores espadas. Pero ignoraron el acero durante el tiempo suficiente para
+                        oxidarse.
+
+                        Hay cuatro personas a las que observamos. La primera es el médico, quien dejó de curar para
+                        convertirse
+                        en soldado durante la guerra más brutal de nuestro tiempo. La segunda es el asesino, un homicida
+                        que
+                        llora siempre que mata. La tercera es la mentirosa, una joven que viste un manto de erudita
+                        sobre un
+                        corazón de ladrona. Por último está el alto príncipe, un guerrero que mira al pasado mientras
+                        languidece
+                        su sed de guerra.
+
+                        El mundo puede cambiar. La potenciación y el uso de las esquirlas pueden aparecer de nuevo, la
+                        magia
+                        de
+                        los días pasados puede volver a ser nuestra. Esas cuatro personas son la clave.
+
+                        Una de ellas nos redimirá. Y una de ellas nos destruirá.</p>
+                    <img src="./multimedia/camino.jpg" alt="El camino de los reyes">
+                </section>
+            </article>
         </section>
     </main>
     <footer>
@@ -118,4 +169,5 @@
         <p>Universidad de Oviedo - Lenguajes y Estándares de la Web</p>
     </footer>
 </body>
+
 </html>

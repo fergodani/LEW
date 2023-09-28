@@ -4,8 +4,6 @@ body {
     background-color: #f0f0f0;
 }
 
-
-
 nav {
     background-color: #333;
     color: #fff;
@@ -59,10 +57,56 @@ header section {
     padding: 4em;
 }
 
-header img {
+header img:first-child {
     border-radius: 50%;
     width: 200px;
     height: 200px;
+}
+
+header img:last-child {
+    width: 25%;
+    height: auto;
+}
+
+main > article, section > article {
+    margin: 10px;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #333;
+    width: 300px;
+    background-color: #f0f0f0;
+}
+
+main > table + section article {
+    width: 100%;
+    border: none;
+    background-color: white;
+}
+
+main > table + section article > section {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+main > table + section article > section img {
+    width: 20%;
+    height: auto;
+}
+
+
+main > table + section img {
+    width: 100%;
+}
+
+article h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+section > article > img{
+    max-width: 4em;
+    height: auto;
 }
 
 li img {
@@ -76,4 +120,23 @@ aside {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+}
+
+figure {
+    width: 70%;
+    margin: 20px 0;
+}
+
+
+aside img {
+    max-width: 4em;
+    height: auto;
+    margin: 10px;
+}
+
+section span {
+    display: inline-block;
+    font-size: 20px;
+    color: #ffcc00;
+    padding: 0 2px;
 }
