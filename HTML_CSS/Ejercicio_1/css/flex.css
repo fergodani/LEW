@@ -12,14 +12,12 @@ main section  {
     align-items: center;
 }
 
-main > section + section {
+main section h2 + section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-
-
 
 main > table + section {
     display: flex;

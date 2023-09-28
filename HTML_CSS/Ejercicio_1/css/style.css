@@ -68,15 +68,7 @@ header img:last-child {
     height: auto;
 }
 
-main > article, section > article {
-    margin: 10px;
-    border-radius: 5px;
-    padding: 20px;
-    text-align: center;
-    border: 2px solid #333;
-    width: 300px;
-    background-color: #f0f0f0;
-}
+
 
 main > table + section article {
     width: 100%;
@@ -134,9 +126,3 @@ aside img {
     margin: 10px;
 }
 
-section span {
-    display: inline-block;
-    font-size: 20px;
-    color: #ffcc00;
-    padding: 0 2px;
-}

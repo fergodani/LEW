@@ -1,0 +1,21 @@
+td p {
+    display: inline-block;
+    font-size: 20px;
+    color: #ffcc00;
+    padding: 0 2px;
+}
+
+article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+article section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+}

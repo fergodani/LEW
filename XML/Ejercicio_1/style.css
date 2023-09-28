@@ -2,7 +2,7 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,4 +23,46 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3em;
+    margin-right: 3em;
+    padding: 3em;
+}
+
+section p {
+    background-color: white;
+    padding: 2em;
+    border-radius: 1em;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 75ch;
+    letter-spacing: 0.5px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px; /* Ajusta el espaciado interior según sea necesario */
+    font-size: 16px;
+    background-color: #333; /* Color de fondo */
+    border: none;
+    border-radius: 4px; /* Bordes redondeados */
+    color: #f0f0f0; /* Color de texto */
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #fff; /* Cambio de color de fondo al pasar el cursor */
+    color: #333;
+}
+
+img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }

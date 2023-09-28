@@ -29,3 +29,15 @@ aside {
 footer {
     grid-area: footer;
 }
+
+main > section + section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px; /* Espacio entre elementos de la cuadrícula */
+
+}
+
+main > section + section > h2 {
+    grid-column: 1 / -1;
+}
+

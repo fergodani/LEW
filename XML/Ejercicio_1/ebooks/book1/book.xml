@@ -12,13 +12,13 @@
   </metadata>
   <manifest>
     <!-- Lista de archivos y recursos del libro -->
-    <item id="cover" href="cover.jpg" media-type="image/jpg" />
-    <item id="chapter1" href="chapter1.html" media-type="text/html" />
-    <item id="chapter2" href="chapter2.html" media-type="text/html" />
+    <item id="cover" href="cover.jpg" media-type="image/jpg"/>
+    <item id="chapter1" href="chapter1.txt" media-type="text/plain"/>
+    <item id="chapter2" href="chapter2.txt" media-type="text/plain"/>
   </manifest>
   <spine>
     <!-- Orden de lectura de los elementos del libro -->
-    <itemref idref="cover" />
+    <itemref idref="cover"/>
     <itemref idref="chapter1" />
     <itemref idref="chapter2" />
   </spine>
