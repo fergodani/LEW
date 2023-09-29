@@ -63,7 +63,7 @@ button:hover {
 }
 
 img {
-    width: 200px;
-    height: auto;
+    height: 300px;
+    width: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
