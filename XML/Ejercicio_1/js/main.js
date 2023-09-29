@@ -15,6 +15,7 @@ class XMLFile {
   }
 
   readLibrary() {
+    $("h1 + button").hide()
     $.ajax({
       dataType: "xml",
       url: "./ebooks/book1/book.xml",
@@ -24,31 +25,44 @@ class XMLFile {
         const type = datos.firstElementChild.firstElementChild.firstElementChild.children[1].innerHTML
         const author = datos.firstElementChild.firstElementChild.firstElementChild.children[3].innerHTML
         const cover = "./ebooks/book1/" + datos.firstElementChild.children[1].children[0].attributes.getNamedItem("href").value
-        $("main").html(
+        $("main").append(
           "<article><img src='" + cover + "' /><h2>" + title + "</h2><p>" + author + "</p><button onclick='xml.readBook(1)'>Leer</button></article>"
         )
       }
     })
-  }
+    $.ajax({
+      dataType: "xml",
+      url: "./ebooks/book2/book.xml",
+      method: 'GET',
+      success: function (datos) {
+        const title = datos.firstElementChild.firstElementChild.firstElementChild.children[0].innerHTML
+        const type = datos.firstElementChild.firstElementChild.firstElementChild.children[1].innerHTML
+        const author = datos.firstElementChild.firstElementChild.firstElementChild.children[3].innerHTML
+        const cover = "./ebooks/book2/" + datos.firstElementChild.children[1].children[0].attributes.getNamedItem("href").value
+        $("main").append(
+          "<article><img src='" + cover + "' /><h2>" + title + "</h2><p>" + author + "</p><button onclick='xml.readBook(2)'>Leer</button></article>"
+        )
+      }
+    })
 
-  goBack(){
-    $("main").show()
-    $("main + button").hide()
-    $("section").hide()
+    
   }
 
   readBook(index) {
     $("section").html("")
     $("section").show()
-    $("main + button").show()
+    $("h1 + button").show()
     $("main").hide()
     $.ajax({
       dataType: "xml",
       url: "./ebooks/book" + index + "/book.xml",
       method: 'GET',
       success: function (datos) {
+        const title = datos.firstElementChild.firstElementChild.firstElementChild.children[0].innerHTML
         const pagesOrdered = datos.firstElementChild.lastElementChild.children
         const content = datos.firstElementChild.children[1].children
+
+        $("h1").html(title)
 
         for (let item of pagesOrdered) {
           const id = item.attributes[0].value
@@ -75,6 +89,13 @@ class XMLFile {
         }
       }
     })
+  }
+
+  goBack(){
+    $("main").show()
+    $("h1 + button").hide()
+    $("section").hide()
+    $("h1").html("Librería")
   }
 
   leerArchivoTexto(files) {

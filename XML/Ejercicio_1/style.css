@@ -45,7 +45,6 @@ section p {
 }
 
 button {
-    display: inline-block;
     padding: 10px 20px; /* Ajusta el espaciado interior según sea necesario */
     font-size: 16px;
     background-color: #333; /* Color de fondo */
@@ -64,5 +63,7 @@ button:hover {
 }
 
 img {
+    width: 200px;
+    height: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
