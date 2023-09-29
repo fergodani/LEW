@@ -1,0 +1,41 @@
+main {
+    display: grid;
+    row-gap: 1em;
+    column-gap: 1em;
+    grid-template-areas: 
+        "image p1 aside"
+        "image p2 aside"
+        "galeria datos situacion"
+        "galeria datos situacion"
+    ;
+    justify-items: center;
+}
+
+main > img {
+    grid-area: image;
+    align-self: center;
+}
+
+main > img + p {
+    grid-area: p1;
+}
+
+main > p:first-child + p {
+    grid-area: p2;
+}
+
+aside {
+    grid-area: aside;
+}
+
+article {
+    grid-area: datos;
+}
+
+main article + section {
+    grid-area: situacion;
+}
+
+main section + section {
+    grid-area: galeria;
+}

@@ -16,6 +16,7 @@ class XMLFile {
 
   readLibrary() {
     $("h1 + button").hide()
+    $("a").hide()
     $.ajax({
       dataType: "xml",
       url: "./ebooks/book1/book.xml",
@@ -44,8 +45,6 @@ class XMLFile {
         )
       }
     })
-
-    
   }
 
   readBook(index) {
@@ -53,10 +52,12 @@ class XMLFile {
     $("section").show()
     $("h1 + button").show()
     $("main").hide()
+    $("a").show()
     $.ajax({
       dataType: "xml",
       url: "./ebooks/book" + index + "/book.xml",
       method: 'GET',
+      async: false,
       success: function (datos) {
         const title = datos.firstElementChild.firstElementChild.firstElementChild.children[0].innerHTML
         const pagesOrdered = datos.firstElementChild.lastElementChild.children
@@ -75,6 +76,7 @@ class XMLFile {
               dataType: "text",
               url: "./ebooks/book" + index + "/" + src ,
               method: 'GET',
+              async: false,
               success: function (element) {
                 console.log(element)
                 if (type == "text/plain") {
@@ -128,6 +130,7 @@ class XMLFile {
           dataType: "xml",
           url: "./ebooks/book1/book1.xml",
           method: 'GET',
+          async: false,
           success: function (datos) {
             console.log(datos)
             console.log("Total nodos: " + $('*', datos).length)
