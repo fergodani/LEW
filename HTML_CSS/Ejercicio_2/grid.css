@@ -3,10 +3,11 @@ main {
     row-gap: 1em;
     column-gap: 1em;
     grid-template-areas: 
-        "image p1 aside"
-        "image p2 aside"
-        "galeria datos situacion"
-        "galeria datos situacion"
+        "image image p1"
+        "image image p2"
+        "situacion situacion aside"
+        "datos datos aside"
+        "galeria galeria galeria"
     ;
     justify-items: center;
 }
@@ -38,4 +39,12 @@ main article + section {
 
 main section + section {
     grid-area: galeria;
+}
+
+@media (max-width: 980px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
