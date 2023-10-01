@@ -1,7 +1,11 @@
 "use strict";
 class XMLFile {
   constructor() {
-    this.books = []
+    this.books = [];
+    this.index = 0;
+    this.pagesOrdered = null;
+    this.content = null;
+    this.bookIndex = 1;
   }
 
   createElement(type, text) {
@@ -53,47 +57,58 @@ class XMLFile {
     $("h1 + button").show()
     $("main").hide()
     $("a").show()
+
+    this.bookIndex = index;
+
     $.ajax({
       dataType: "xml",
       url: "./ebooks/book" + index + "/book.xml",
       method: 'GET',
       async: false,
+      context: this,
       success: function (datos) {
         const title = datos.firstElementChild.firstElementChild.firstElementChild.children[0].innerHTML
-        const pagesOrdered = datos.firstElementChild.lastElementChild.children
-        const content = datos.firstElementChild.children[1].children
+        this.pagesOrdered = datos.firstElementChild.lastElementChild.children
+        this.content = datos.firstElementChild.children[1].children
 
         $("h1").html(title)
 
-        for (let item of pagesOrdered) {
-          const id = item.attributes[0].value
-          const src = content.namedItem(id).attributes[1].value
-          const type = content.namedItem(id).attributes[2].value
-          if (type == "image/jpg") {
-            $("section").append("<img src='./ebooks/book" + index + "/" + src + "' >")
-          } else {
-            $.ajax({
-              dataType: "text",
-              url: "./ebooks/book" + index + "/" + src ,
-              method: 'GET',
-              async: false,
-              success: function (element) {
-                console.log(element)
-                if (type == "text/plain") {
-                  $("section").append("<h2>" + id + "</h2>")
-                  $("section").append(
-                    "<p>" + element + "</p>"
-                  )
-                }
-              }
-            })
-          }
-        }
+        this.readcontent();
       }
     })
   }
 
-  goBack(){
+  readcontent() {
+    const item = this.pagesOrdered[this.index];
+    const id = item.attributes[0].value
+    const src = this.content.namedItem(id).attributes[1].value
+    const type = this.content.namedItem(id).attributes[2].value
+    if (type == "image/jpg") {
+      $("section").append("<img src='./ebooks/book" + this.bookIndex + "/" + src + "' >")
+      this.readcontent(++this.index)
+    } else {
+      $.ajax({
+        dataType: "text",
+        url: "./ebooks/book" + this.bookIndex + "/" + src,
+        method: 'GET',
+        async: false,
+        success: function (element) {
+          if (type == "text/plain") {
+            $("section").append("<h2>" + id + "</h2>")
+            $("section").append(
+              "<p>" + element + "</p>"
+            )
+            if (this.index != 0)
+              $("section").append("<button onclick='xml.readcontent(" + (xml.index - 1) + ")' >Anterior</button>")
+            $("section").append("<button onclick='xml.readcontent(" + ++xml.index + ")' >Siguiente</button>")
+          }
+        }
+      })
+    }
+  }
+
+
+  goBack() {
     $("main").show()
     $("h1 + button").hide()
     $("section").hide()
@@ -149,8 +164,3 @@ class XMLFile {
 
 let xml = new XMLFile()
 xml.readLibrary()
-
-
-
-
-
