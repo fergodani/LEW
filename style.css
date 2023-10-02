@@ -1,0 +1,56 @@
+body {
+    font-family: "Lexend Deca", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dad7c4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+header {
+    background-color: #49392a;
+    color: #fff;
+    text-align: center;
+    padding: 1.25em 0;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+section {
+    border: 0.3em solid #49392a;
+    border-radius: 2em;
+    background-color: white;
+    padding: 2em;
+    color: #49392a;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+a:hover {
+    background-color: #49392a;
+    color: white;
+}
+
+footer {
+    background-color: #49392a;
+    color: #fff;
+    text-align: center;
+    padding: 1.25em 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
