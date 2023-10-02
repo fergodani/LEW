@@ -1,11 +1,11 @@
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #dad7c4;
 }
 
 nav {
-    background-color: #333;
+    background-color: #49392a;
     color: #fff;
     text-align: center;
     padding: 0.5em;
@@ -39,7 +39,7 @@ h2 {
 }
 
 footer {
-    background-color: #333333;
+    background-color: #49392a;
     color: #fff;
     text-align: center;
     padding: 10px 0;

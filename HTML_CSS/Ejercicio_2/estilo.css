@@ -51,19 +51,17 @@ img {
 }
 
 main img {
-    width: 100%;
+    width: 70%;
     height: auto;
     margin-top: 1em;
 }
 
-/* Sección principal */
 main p {
     font-size: 1.2rem;
     color: #666;
     margin-bottom: 1.25em;
 }
 
-/* Enlaces externos */
 footer {
     background-color: #49392a;
     color: #fff;
@@ -101,7 +99,7 @@ aside img {
 }
 
 aside img:hover {
-    transform: scale(5);  
+    transform: scale(3);  
 }
 
 article {
