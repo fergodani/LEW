@@ -18,36 +18,41 @@ class XMLFile {
     this.createElement("p", text)
   }
 
-  readLibrary() {
-    $("h1 + button").hide()
-    $("a").hide()
-    $.ajax({
-      dataType: "xml",
-      url: "./ebooks/book1/book.xml",
-      method: 'GET',
-      success: function (datos) {
-        const title = datos.firstElementChild.firstElementChild.firstElementChild.children[0].innerHTML
-        const type = datos.firstElementChild.firstElementChild.firstElementChild.children[1].innerHTML
-        const author = datos.firstElementChild.firstElementChild.firstElementChild.children[3].innerHTML
-        const cover = "./ebooks/book1/" + datos.firstElementChild.children[1].children[0].attributes.getNamedItem("href").value
-        $("main").append(
-          "<article><img src='" + cover + "' /><h2>" + title + "</h2><p>" + author + "</p><button onclick='xml.readBook(1)'>Leer</button></article>"
-        )
-      }
+  async readLibrary() {
+    for (let i = 0; i < 2; i++) {
+      let url_base = "./ebooks/book" + i + "/"
+      const data = await this.readFile(url_base);
+      const title = data.firstElementChild.firstElementChild.firstElementChild.children[0].innerHTML
+      const type = data.firstElementChild.firstElementChild.firstElementChild.children[1].innerHTML
+      const author = data.firstElementChild.firstElementChild.firstElementChild.children[3].innerHTML
+      const cover = url_base + data.firstElementChild.children[1].children[0].attributes.getNamedItem("href").value
+      const book = new Book(title, author, "", "", type, cover);
+      this.books.push(book);
+    }
+    this.drawBooks()
+  }
+
+  readFile(url_base) {
+    return new Promise((resolve, reject) => {
+      $.ajax({
+        dataType: "xml",
+        url: url_base + "book.xml",
+        method: 'GET',
+        success: function (data) {
+          resolve(data);
+        },
+        error: function(error) {
+          reject(error);
+        }
+      })
     })
-    $.ajax({
-      dataType: "xml",
-      url: "./ebooks/book2/book.xml",
-      method: 'GET',
-      success: function (datos) {
-        const title = datos.firstElementChild.firstElementChild.firstElementChild.children[0].innerHTML
-        const type = datos.firstElementChild.firstElementChild.firstElementChild.children[1].innerHTML
-        const author = datos.firstElementChild.firstElementChild.firstElementChild.children[3].innerHTML
-        const cover = "./ebooks/book2/" + datos.firstElementChild.children[1].children[0].attributes.getNamedItem("href").value
-        $("main").append(
-          "<article><img src='" + cover + "' /><h2>" + title + "</h2><p>" + author + "</p><button onclick='xml.readBook(2)'>Leer</button></article>"
-        )
-      }
+  }
+
+  drawBooks() {
+    this.books.forEach((book) => {
+      $("main").append(
+        "<article><img src='" + book.cover + "' /><h2>" + book.title + "</h2><p>" + book.creator + "</p><button onclick='xml.readBook(1)'>Leer</button></article>"
+      )
     })
   }
 
@@ -160,6 +165,17 @@ class XMLFile {
       errorArchivo.innerText = "Error : ¡¡¡ Archivo no válido !!!";
     }
   };
+}
+
+class Book {
+  constructor(title, creator, subject, date, type, cover) {
+    this.title = title;
+    this.creator = creator;
+    this.subject = subject;
+    this.date = date;
+    this.type = type;
+    this.cover = cover;
+  }
 }
 
 let xml = new XMLFile()

@@ -3,29 +3,23 @@
   <metadata>
     <!-- Metadatos del libro -->
     <dc-metadata xmlns:dc="http://purl.org/dc/elements/1.0/" xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/">
-			<dc:Title>El Camino de los Reyes</dc:Title>
+			<dc:Title>Alice in Wonderland</dc:Title>
 			<dc:Type>Novel</dc:Type>
 			<dc:Identifier id="xyz"
 			 scheme="ISBN">123456789X</dc:Identifier>
-			<dc:Creator role="aut">Brandon Sanderson</dc:Creator>
+			<dc:Creator role="aut">Lewis Carroll</dc:Creator>
 		</dc-metadata>
   </metadata>
   <manifest>
     <!-- Lista de archivos y recursos del libro -->
     <item id="cover" href="cover.jpg" media-type="image/jpg"/>
-    <item id="Prelude" href="prelude.txt" media-type="text/plain"/>
-    <item id="Prologue" href="prologue.txt" media-type="text/plain"/>
-    <item id="Chapter1" href="chapter1.txt" media-type="text/plain"/>
-    <item id="Chapter2" href="chapter2.txt" media-type="text/plain"/>
-    <item id="Chapter3" href="chapter3.txt" media-type="text/plain"/>
+    <item id="chapter1" href="chapter1.txt" media-type="text/plain"/>
+    <item id="chapter2" href="chapter2.txt" media-type="text/plain"/>
   </manifest>
   <spine>
     <!-- Orden de lectura de los elementos del libro -->
     <itemref idref="cover"/>
-    <itemref idref="Prelude" />
-    <itemref idref="Prologue" />
-    <itemref idref="Chapter1" />
-    <itemref idref="Chapter2" />
-    <itemref idref="Chapter3" />
+    <itemref idref="chapter1" />
+    <itemref idref="chapter2" />
   </spine>
 </package>
