@@ -5,8 +5,8 @@
     <dc-metadata xmlns:dc="http://purl.org/dc/elements/1.0/" xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/">
 			<dc:Title>El Camino de los Reyes</dc:Title>
 			<dc:Type>Novel</dc:Type>
-			<dc:Identifier id="xyz"
-			 scheme="ISBN">123456789X</dc:Identifier>
+			<dc:Subject>Fantasy</dc:Subject>
+			<dc:Date>2010</dc:Date>
 			<dc:Creator role="aut">Brandon Sanderson</dc:Creator>
 		</dc-metadata>
   </metadata>
