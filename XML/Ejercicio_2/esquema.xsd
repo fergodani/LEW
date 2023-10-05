@@ -3,6 +3,9 @@
     <xs:element name="biblioteca">
 		<xs:complexType>
 			<xs:sequence>
+				<xs:element ref="color" />
+				<xs:element ref="color" />
+				<xs:element ref="color" />
 				<xs:element minOccurs="1" maxOccurs="unbounded" ref="autor" />
 			</xs:sequence>
 		</xs:complexType>
@@ -10,6 +13,7 @@
     <xs:element name="autor">
 		<xs:complexType>
 			<xs:sequence>
+                <xs:element ref="imagen"/>
 				<xs:element minOccurs="1" maxOccurs="unbounded" ref="libro" />
 			</xs:sequence>
             <xs:attribute name="nombre" type="xs:string" use="required" />
@@ -18,21 +22,30 @@
 	</xs:element>
     <xs:element name="libro">
         <xs:complexType>
-            <xs:element name="titulo" type="xs:string"/>
-            <xs:element name="editorial" type="xs:string"/>
-            <xs:element name="salida" type="xs:integer"/>
-            <xs:element name="sinopsis" type="xs:string"/>
-            <xs:element name="puntuacion" type="xs:decimal"/>
-            <xs:element name="isbn" type="xs:string"/>
-            <xs:element name="genero" type="xs:string"/>
-            <xs:element ref="portada"/>
+            <xs:sequence>
+                <xs:element name="titulo" type="xs:string"/>
+                <xs:element name="editorial" type="xs:string"/>
+                <xs:element name="salida" type="xs:integer"/>
+                <xs:element name="sinopsis" type="xs:string"/>
+                <xs:element name="puntuacion" type="xs:decimal"/>
+                <xs:element name="isbn" type="xs:string"/>
+                <xs:element name="genero" type="xs:string"/>
+                <xs:element ref="imagen"/>
+            </xs:sequence>
         </xs:complexType>
     </xs:element>
-    <xs:element name="portada">
+    <xs:element name="imagen">
         <xs:simpleType>
 			<xs:restriction base="xs:string">
-				<xs:pattern value="[a-zA-Z]+(\.jpg|\.png)"/>
+				<xs:pattern value="[a-zA-Z]*[1-9]*(\.jpg|\.png)"/>
 			</xs:restriction>
 		</xs:simpleType>
     </xs:element>
+    <xs:element name="color">
+        <xs:simpleType>
+	    		<xs:restriction base="xs:string">
+	    			<xs:pattern value="#([a-fA-F0-9]{6}|[a-fA-F0-9]{3})"/>
+	    		</xs:restriction>
+	    	</xs:simpleType>
+        </xs:element>
 </xs:schema>

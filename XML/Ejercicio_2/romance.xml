@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="esquema.xsd">
+    <color>#FAC8FF</color>
+    <color>#FEF4FF</color>
+    <color>#000000</color>
+     <autor nombre="Nicholas Sparks" nacimiento="31 de diciembre de 1965">
+        <imagen>nicholasSparks.jpg</imagen>
+        <libro>
+            <titulo>El cuaderno de Noah</titulo>
+            <editorial>Roca Editorial</editorial>
+            <salida>1996</salida>
+            <sinopsis>La historia de amor entre Noah y Allie que trasciende el tiempo.</sinopsis>
+            <puntuacion>4.5</puntuacion>
+            <isbn>978-84-95763-44-8</isbn>
+            <genero>Romance</genero>
+            <imagen>cuadernoNoah.jpg</imagen>
+        </libro>
+        <libro>
+            <titulo>Querido John</titulo>
+            <editorial>Roca Editorial</editorial>
+            <salida>2006</salida>
+            <sinopsis>La carta de John a Savannah desencadena una emotiva historia de amor y sacrificio.</sinopsis>
+            <puntuacion>4.4</puntuacion>
+            <isbn>978-84-96924-73-0</isbn>
+            <genero>Romance</genero>
+            <imagen>queridoJohn.jpg</imagen>
+        </libro>
+    </autor>
+    <autor nombre="Jane Austen" nacimiento="16 de diciembre de 1775">
+        <imagen>janeAusten.jpg</imagen>
+        <libro>
+            <titulo>Orgullo y prejuicio</titulo>
+            <editorial>Alianza Editorial</editorial>
+            <salida>1813</salida>
+            <sinopsis>La historia de Elizabeth Bennet y Mr. Darcy en la Inglaterra del siglo XIX.</sinopsis>
+            <puntuacion>4.6</puntuacion>
+            <isbn>978-84-206-3279-1</isbn>
+            <genero>Romance</genero>
+            <imagen>orgulloPrejuicio.jpg</imagen>
+        </libro>
+        <libro>
+            <titulo>Sentido y sensibilidad</titulo>
+            <editorial>Alianza Editorial</editorial>
+            <salida>1811</salida>
+            <sinopsis>Las vidas y amores de las hermanas Dashwood en la sociedad británica.</sinopsis>
+            <puntuacion>4.5</puntuacion>
+            <isbn>978-84-206-3249-4</isbn>
+            <genero>Romance</genero>
+            <imagen>sentidoSensibilidad.jpg</imagen>
+        </libro>
+    </autor>
+    <autor nombre="Jojo Moyes" nacimiento="4 de agosto de 1969">
+        <imagen>jojoMoyes.jpg</imagen>
+        <libro>
+            <titulo>Yo antes de ti</titulo>
+            <editorial>Penguin Random House</editorial>
+            <salida>2012</salida>
+            <sinopsis>La historia de amor entre Louisa y Will, un hombre tetrapléjico.</sinopsis>
+            <puntuacion>4.7</puntuacion>
+            <isbn>978-84-08-09753-3</isbn>
+            <genero>Romance</genero>
+            <imagen>yoAntesDeTi.jpg</imagen>
+        </libro>
+    </autor>
+</biblioteca>

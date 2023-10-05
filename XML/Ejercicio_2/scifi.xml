@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="esquema.xsd">
+    <color>#002439</color>
+    <color>#E4EFF0</color>
+    <color>#ffffff</color>
+    <autor nombre="Isaac Asimov" nacimiento="2 de enero de 1920">
+        <imagen>asimov.jpg</imagen>
+        <libro>
+            <titulo>Fundación</titulo>
+            <editorial>Ediciones B</editorial>
+            <salida>1951</salida>
+            <sinopsis>La saga de la Fundación para preservar el conocimiento en una galaxia en declive.</sinopsis>
+            <puntuacion>4.7</puntuacion>
+            <isbn>978-84-666-4667-2</isbn>
+            <genero>Ciencia Ficción</genero>
+            <imagen>fundacion.jpg</imagen>
+        </libro>
+        <libro>
+            <titulo>Yo, Robot</titulo>
+            <editorial>Ediciones B</editorial>
+            <salida>1950</salida>
+            <sinopsis>Relatos sobre robots y su interacción con los humanos.</sinopsis>
+            <puntuacion>4.6</puntuacion>
+            <isbn>978-84-666-3962-0</isbn>
+            <genero>Ciencia Ficción</genero>
+            <imagen>yoRobot.jpg</imagen>
+        </libro>
+    </autor>
+    <autor nombre="Philip K. Dick" nacimiento="16 de diciembre de 1928">
+        <imagen>philipDick.jpg</imagen>
+        <libro>
+            <titulo>Blade Runner (¿Sueñan los androides con ovejas eléctricas?)</titulo>
+            <editorial>Minotauro</editorial>
+            <salida>1968</salida>
+            <sinopsis>La historia de Rick Deckard, cazador de androides, en un mundo postapocalíptico.</sinopsis>
+            <puntuacion>4.5</puntuacion>
+            <isbn>978-84-450-7429-1</isbn>
+            <genero>Ciencia Ficción</genero>
+            <imagen>bladeRunner.jpg</imagen>
+        </libro>
+    </autor>
+    <autor nombre="Arthur C. Clarke" nacimiento="16 de diciembre de 1917">
+        <imagen>arthurClarke.jpg</imagen>
+        <libro>
+            <titulo>2001: Una odisea espacial</titulo>
+            <editorial>Debolsillo</editorial>
+            <salida>1968</salida>
+            <sinopsis>La exploración del espacio y el encuentro con una inteligencia extraterrestre.</sinopsis>
+            <puntuacion>4.8</puntuacion>
+            <isbn>978-84-8346-406-8</isbn>
+            <genero>Ciencia Ficción</genero>
+            <imagen>odiseaEspacial.jpg</imagen>
+        </libro>
+    </autor>
+</biblioteca>

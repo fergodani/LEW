@@ -1,71 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mostrar Datos XML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ejercicio 1</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js"></script>
 </head>
+
 <body>
-    <h1>Datos de la Biblioteca</h1>
-    <div id="bibliotecaData"></div>
-
-    <script>
-        // Función para cargar y mostrar datos del archivo XML
-        function cargarXML() {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-                if (this.readyState === 4 && this.status === 200) {
-                    mostrarDatos(this);
-                }
-            };
-            xhttp.open("GET", "biblioteca.xml", true); // Reemplaza 'ruta/al/tuarchivo.xml' con la ubicación de tu archivo XML
-            xhttp.send();
-        }
-
-        // Función para mostrar los datos del XML en la página
-        function mostrarDatos(xml) {
-            var xmlDoc = xml.responseXML;
-            var bibliotecaData = document.getElementById("bibliotecaData");
-            var autores = xmlDoc.getElementsByTagName("autor");
-
-            for (var i = 0; i < autores.length; i++) {
-                var autor = autores[i];
-                var nombre = autor.getAttribute("nombre");
-                var nacimiento = autor.getAttribute("nacimiento");
-                var libros = autor.getElementsByTagName("libro");
-                bibliotecaData.innerHTML += "<h2>Autor: " + nombre + "</h2>";
-                bibliotecaData.innerHTML += "<p>Fecha de nacimiento: " + nacimiento + "</p>";
-                bibliotecaData.innerHTML += "<ul>";
-
-                for (var j = 0; j < libros.length; j++) {
-                    var libro = libros[j];
-                    var titulo = libro.getElementsByTagName("titulo")[0].textContent;
-                    var editorial = libro.getElementsByTagName("editorial")[0].textContent;
-                    var añoSalida = libro.getElementsByTagName("año_salida")[0].textContent;
-                    var sinopsis = libro.getElementsByTagName("sinopsis")[0].textContent;
-                    var puntuacion = libro.getElementsByTagName("puntuacion")[0].textContent;
-                    var isbn = libro.getElementsByTagName("isbn")[0].textContent;
-                    var genero = libro.getElementsByTagName("genero")[0].textContent;
-                    var portada = libro.getElementsByTagName("portada")[0].textContent;
-
-                    bibliotecaData.innerHTML += "<li>";
-                    bibliotecaData.innerHTML += "<strong>Título:</strong> " + titulo + "<br>";
-                    bibliotecaData.innerHTML += "<strong>Editorial:</strong> " + editorial + "<br>";
-                    bibliotecaData.innerHTML += "<strong>Año de Salida:</strong> " + añoSalida + "<br>";
-                    bibliotecaData.innerHTML += "<strong>Sinopsis:</strong> " + sinopsis + "<br>";
-                    bibliotecaData.innerHTML += "<strong>Puntuación:</strong> " + puntuación + "<br>";
-                    bibliotecaData.innerHTML += "<strong>ISBN:</strong> " + isbn + "<br>";
-                    bibliotecaData.innerHTML += "<strong>Género:</strong> " + genero + "<br>";
-                    bibliotecaData.innerHTML += "<strong>Portada:</strong> " + portada + "<br>";
-                    bibliotecaData.innerHTML += "</li>";
-                }
-
-                bibliotecaData.innerHTML += "</ul>";
-            }
-        }
-
-        // Llama a la función cargarXML cuando se carga la página
-        window.onload = cargarXML;
-    </script>
+    <header>
+        <h1>Biblioteca de autores</h1>
+    </header>
+    <button hidden onclick='xml.goBackAuthors()'>Volver</button>
+    <button hidden onclick='xml.goBackBooks()'>Volver</button>
+    <section>
+        <h2>Añadir fichero:</h2>
+        <input type="file" id="archivoTexto" onchange="xml.readXML(this.files);" multiple>
+    </section>
+    <main>
+        <p>Todavía no has añadido ningún archivo</p>
+    </main>
+    
+    <section></section>
+    <section></section>
+    <a href="#top" hidden>Arriba</a>
 </body>
+
 </html>

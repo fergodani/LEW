@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="esquema.xsd">
+    <color>#376d60</color>
+    <color>#abd2a3</color>
+    <color>#ffffff</color>
+    <autor nombre="J.K. Rowling" nacimiento="31 de julio de 1965">
+        <imagen>JKRowling.jpg</imagen>
+        <libro>
+            <titulo>Harry Potter y la piedra filosofal</titulo>
+            <editorial>Salamandra</editorial>
+            <salida>1997</salida>
+            <sinopsis>La historia del joven mago Harry Potter.</sinopsis>
+            <puntuacion>4.8</puntuacion>
+            <isbn>978-84-9838-235-2</isbn>
+            <genero>Fantasía</genero>
+            <imagen>harryPotter.jpg</imagen>
+        </libro>
+        <libro>
+            <titulo>Harry Potter y la cámara secreta</titulo>
+            <editorial>Salamandra</editorial>
+            <salida>1998</salida>
+            <sinopsis>La segunda aventura de Harry Potter en Hogwarts.</sinopsis>
+            <puntuacion>4.7</puntuacion>
+            <isbn>978-84-9838-236-9</isbn>
+            <genero>Fantasía</genero>
+            <imagen>harryPotter2.jpg</imagen>
+        </libro>
+    </autor>
+    <autor nombre="J.R.R. Tolkien" nacimiento="3 de enero de 1892">
+        <imagen>tolkien.jpg</imagen>
+        <libro>
+            <titulo>El Señor de los Anillos</titulo>
+            <editorial>Minotauro</editorial>
+            <salida>1954</salida>
+            <sinopsis>La épica historia de la lucha por el Anillo Único en la Tierra Media.</sinopsis>
+            <puntuacion>4.9</puntuacion>
+            <isbn>978-84-450-7175-7</isbn>
+            <genero>Fantasía</genero>
+            <imagen>senorAnillos.jpg</imagen>
+        </libro>
+        <libro>
+            <titulo>El Hobbit</titulo>
+            <editorial>Minotauro</editorial>
+            <salida>1937</salida>
+            <sinopsis>La historia de Bilbo Bolsón y su aventura para reclamar un tesoro.</sinopsis>
+            <puntuacion>4.7</puntuacion>
+            <isbn>978-84-450-7173-3</isbn>
+            <genero>Fantasía</genero>
+            <imagen>hobbit.jpg</imagen>
+        </libro>
+    </autor>
+    <autor nombre="George R.R. Martin" nacimiento="20 de septiembre de 1948">
+        <imagen>georgeMartin.jpg</imagen>
+        <libro>
+            <titulo>Juego de Tronos</titulo>
+            <editorial>Plaza y Janés</editorial>
+            <salida>1996</salida>
+            <sinopsis>La lucha por el Trono de Hierro en los Siete Reinos.</sinopsis>
+            <puntuacion>4.6</puntuacion>
+            <isbn>978-84-01-33655-8</isbn>
+            <genero>Fantasía</genero>
+            <imagen>juegoTronos.jpg</imagen>
+        </libro>
+        <libro>
+            <titulo>Choque de Reyes</titulo>
+            <editorial>Plaza y Janés</editorial>
+            <salida>1998</salida>
+            <sinopsis>Continúa la saga de luchas políticas y guerras en Poniente.</sinopsis>
+            <puntuacion>4.5</puntuacion>
+            <isbn>978-84-01-35239-6</isbn>
+            <genero>Fantasía</genero>
+            <imagen>choqueReyes.jpg</imagen>
+        </libro>
+    </autor>
+</biblioteca>
