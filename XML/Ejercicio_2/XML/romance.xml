@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:noNamespaceSchemaLocation="esquema.xsd">
+    <cabecera>Autores de Romance</cabecera>
     <color>#FAC8FF</color>
     <color>#FEF4FF</color>
     <color>#000000</color>

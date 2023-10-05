@@ -3,6 +3,7 @@
     <xs:element name="biblioteca">
 		<xs:complexType>
 			<xs:sequence>
+                <xs:element name="cabecera" type="xs:string"/>
 				<xs:element ref="color" />
 				<xs:element ref="color" />
 				<xs:element ref="color" />
