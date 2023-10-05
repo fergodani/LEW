@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="biblioteca">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="autor" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+    <xs:element name="autor">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="libro" />
+			</xs:sequence>
+            <xs:attribute name="nombre" type="xs:string" use="required" />
+			<xs:attribute name="nacimiento" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+    <xs:element name="libro">
+        <xs:complexType>
+            <xs:element name="titulo" type="xs:string"/>
+            <xs:element name="editorial" type="xs:string"/>
+            <xs:element name="salida" type="xs:integer"/>
+            <xs:element name="sinopsis" type="xs:string"/>
+            <xs:element name="puntuacion" type="xs:decimal"/>
+            <xs:element name="isbn" type="xs:string"/>
+            <xs:element name="genero" type="xs:string"/>
+            <xs:element ref="portada"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="portada">
+        <xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="[a-zA-Z]+(\.jpg|\.png)"/>
+			</xs:restriction>
+		</xs:simpleType>
+    </xs:element>
+</xs:schema>

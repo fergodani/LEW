@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="tu_esquema.xsd">
+    <autor nombre="J.K. Rowling" nacimiento="31 de julio de 1965">
+        <libro>
+            <titulo>Harry Potter y la piedra filosofal</titulo>
+            <editorial>Salamandra</editorial>
+            <salida>1997</salida>
+            <sinopsis>La historia del joven mago Harry Potter.</sinopsis>
+            <puntuacion>4.8</puntuacion>
+            <isbn>978-84-9838-235-2</isbn>
+            <genero>Fantasía</genero>
+            <portada>harry_potter.jpg</portada>
+        </libro>
+        <libro>
+            <titulo>Harry Potter y la cámara secreta</titulo>
+            <editorial>Salamandra</editorial>
+            <salida>1998</salida>
+            <sinopsis>La segunda aventura de Harry Potter en Hogwarts.</sinopsis>
+            <puntuacion>4.7</puntuacion>
+            <isbn>978-84-9838-236-9</isbn>
+            <genero>Fantasía</genero>
+            <portada>harry_potter2.jpg</portada>
+        </libro>
+    </autor>
+    <autor nombre="George Orwell" nacimiento="25 de junio de 1903">
+        <libro>
+            <titulo>1984</titulo>
+            <editorial>Debolsillo</editorial>
+            <salida>1949</salida>
+            <sinopsis>Una novela distópica que describe un futuro totalitario.</sinopsis>
+            <puntuacion>4.6</puntuacion>
+            <isbn>978-84-663-4530-7</isbn>
+            <genero>Ficción distópica</genero>
+            <portada>1984.jpg</portada>
+        </libro>
+    </autor>
+</biblioteca>
