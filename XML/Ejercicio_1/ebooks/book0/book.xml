@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://openebook.org/namespaces/oeb-package/1.0/">
+  <metadata>
+    <!-- Metadatos del libro -->
+    <dc-metadata xmlns:dc="http://purl.org/dc/elements/1.0/" xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/">
+			<dc:Title>Alice in Wonderland</dc:Title>
+			<dc:Type>Novel</dc:Type>
+			<dc:Subject>Fantasy</dc:Subject>
+			<dc:Date>1865</dc:Date>
+			<dc:Creator role="aut">Lewis Carroll</dc:Creator>
+		</dc-metadata>
+  </metadata>
+  <manifest>
+    <!-- Lista de archivos y recursos del libro -->
+    <item id="cover" href="cover.jpg" media-type="image/jpg"/>
+    <item id="chapter1" href="chapter1.txt" media-type="text/plain"/>
+    <item id="chapter2" href="chapter2.txt" media-type="text/plain"/>
+  </manifest>
+  <spine>
+    <!-- Orden de lectura de los elementos del libro -->
+    <itemref idref="cover"/>
+    <itemref idref="chapter1" />
+    <itemref idref="chapter2" />
+  </spine>
+</package>
