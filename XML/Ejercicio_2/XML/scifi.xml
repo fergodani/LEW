@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:noNamespaceSchemaLocation="esquema.xsd">
+    <cabecera>Autores de Ciencia Ficción</cabecera>
     <color>#002439</color>
     <color>#E4EFF0</color>
     <color>#ffffff</color>
