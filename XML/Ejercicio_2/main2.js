@@ -34,6 +34,7 @@ class XMLFile {
   }
 
   readXML(files) {
+    let html = "<!DOCTYPE html><html lang='es'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1' /><title>Ejercicio 1</title><script src='http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script><link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'><link rel='stylesheet' href='style.css'><script src='./main.js'></script></head><body><header><h1>Biblioteca de autores</h1></header><main>"
     const lector = new FileReader();
     const self = this;
     lector.onload = function(event) {
@@ -51,6 +52,9 @@ class XMLFile {
             const image = author.querySelector("imagen").innerHTML;
             const name = author.getAttribute("nombre");
             const birth = author.getAttribute("nacimiento");
+            html = html + "<article><img src='./multimedia/" + image + "'/><h2>" + 
+            name + "</h2><p>" + birth + 
+            "</p><button onclick='xml.showBooks(" + index + ")'>Ver libros</button></article>"
             $("main").append(
                 "<article><img src='./multimedia/" + image + "'/><h2>" + 
                 name + "</h2><p>" + birth + 
@@ -58,6 +62,8 @@ class XMLFile {
               )
             index++;
         })
+        html = html + "</main></body></html>"
+        console.log(html)
     }
     lector.readAsText(files[0])
   }
