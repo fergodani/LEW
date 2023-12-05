@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<siteMap>
+    <page>
+        <url>./index.html</url>
+        <content>
+            <body>
+                <nav>
+                    <h1>Mi Página Personal</h1>
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="aficiones.html">Aficiones</a>
+                        </li>
+                        <li>
+                            <a href="tfg.html">TFG</a>
+                        </li>
+                        <li>
+                            <a href="libros.html">Literatura</a>
+                        </li>
+                    </ul>
+                    <form id="searchForm">
+                        <input type="text" id="searchInput" placeholder="Buscar en el sitio" />
+                        <input type="submit" value="Buscar" />
+                    </form>
+                </nav>
+                <header>
+                    <img alt="foto" src="multimedia/f1.png" />
+                    <section>
+                        <h1>Daniel Ferreira Gómez</h1>
+                        <p>Hola, soy Daniel Ferreira Gómez, graduado en ingeniería
+                            informática del Software. Actualmente estoy cursando el
+                            máster en Ingeniería Web en la Universidad de Oviedo.</p>
+                    </section>
+                </header>
+                <main>
+                    <article>
+                        <h2>Estudios</h2>
+                        <ul>
+                            <li>
+                                Máster en Ingeniería Web - 2023/actual
+                            </li>
+                            <li>
+                                Grado en Ingeniería Informática del Software - 2019/2023
+                            </li>
+                            <li>
+                                Bachillerato Tecnológico
+                            </li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h2>Áreas de conocimiento</h2>
+                        <ul>
+                            <li>
+                                Android
+                            </li>
+                            <li>
+                                Kotlin
+                            </li>
+                            <li>
+                                Angular
+                            </li>
+                            <li>
+                                Nodejs
+                            </li>
+                        </ul>
+                    </article>
+                </main>
+                <aside>
+                    <h2>Contacto</h2>
+                    <p>Puedes contactarme através de los siguientes enlaces:</p>
+                    <ul>
+                        <li>
+                            <img alt="GitHub" src="./multimedia/twitter.png" />
+                            <p>Twitter</p>
+                        </li>
+                        <li>
+                            <img alt="GitHub" src="./multimedia/linkeding.png" />
+                            <p>Linkedin</p>
+                        </li>
+                        <li>
+                            <img alt="GitHub" src="./multimedia/github.png" />
+                            <p>GitHub</p>
+                        </li>
+                        <li>
+                            <img alt="email" src="./multimedia/email.png" />
+                            <p>uo277603@uniovi.es</p>
+                        </li>
+                        <li>
+                            <img alt="email" src="./multimedia/email.png" />
+                            <p>ferreiragomezdaniel@gmail.com</p>
+                        </li>
+                    </ul>
+                </aside>
+                <footer>
+                    <p>Daniel Ferreira Gómez - UO277603</p>
+                    <p>Universidad de Oviedo - Lenguajes y Estándares de la Web</p>
+                </footer>
+            </body>
+        </content>
+    </page>
+    <page>
+        <url>./aficiones.html</url>
+        <content>
+            <body>
+                <nav>
+                    <h1>Mis Aficiones</h1>
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="aficiones.html">Aficiones</a>
+                        </li>
+                        <li>
+                            <a href="tfg.html">TFG</a>
+                        </li>
+                        <li>
+                            <a href="libros.html">Literatura</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <header class="introduccion">
+                    <section>
+                        <h2>¡Bienvenido a mi página de aficiones!</h2>
+                        <p>Permíteme compartir contigo algunas de las cosas que más disfruto en la
+                            vida. Aquí encontrarás
+                            información sobre mis cuatro principales pasiones: la guitarra, los
+                            libros, los videojuegos y la
+                            informática. Cada una de estas actividades es una parte importante de mi
+                            vida, y me encantaría que las
+                            conozcas un poco mejor. ¡Disfruta de la lectura!</p>
+                    </section>
+                    <img alt="foto" src="multimedia/aficiones.png" />
+                </header>
+
+                <main>
+                    <article>
+                        <h2>Guitarra</h2>
+                        <img src="./multimedia/guitarra.jpg" alt="Guitarra" />
+                        <p>La guitarra es una de mis pasiones. Me encanta tocar música y aprender
+                            nuevas canciones.</p>
+                    </article>
+
+                    <article>
+                        <h2>Libros</h2>
+                        <img src="./multimedia/libros.jpg" alt="Libros" />
+                        <p>Disfruto mucho de la lectura. Los libros me transportan a diferentes
+                            mundos y me ayudan a aprender.</p>
+                    </article>
+
+                    <article>
+                        <h2>Videojuegos</h2>
+                        <img src="./multimedia/videojuegos.jpg" alt="Videojuegos" />
+                        <p>Los videojuegos son una forma divertida de entretenimiento. Me encanta
+                            jugar y explorar nuevos mundos
+                            virtuales.</p>
+                    </article>
+
+                    <article>
+                        <h2>Informática</h2>
+                        <img src="./multimedia/informatica.jpg" alt="Informática"/>
+                        <p>La informática es mi carrera y mi pasión. Me encanta programar y crear
+                            soluciones tecnológicas.</p>
+                    </article>
+
+                    <article>
+                        <h2>Juegos de Mesa</h2>
+                        <img src="./multimedia/juegosmesa.jpg" alt="Juegos de mesa"/>
+                        <p>También me gusta mucho juntarme con más personas, o incluso yo mismo, y
+                            jugar a juegos de mesa. Aportan
+                            un enfoque diferente a los videojuegos y pueden dar lugar a situaciones
+                            muy divertidas.</p>
+                    </article>
+                </main>
+                <footer>
+                    <p>Daniel Ferreira Gómez - UO277603</p>
+                    <p>Universidad de Oviedo - Lenguajes y Estándares de la Web</p>
+                </footer>
+            </body>
+        </content>
+    </page>
+    <page>
+        <url>./libros.html</url>
+        <content>
+            <body>
+                <nav>
+                    <h1>Mis Libros Favoritos</h1>
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="aficiones.html">Aficiones</a>
+                        </li>
+                        <li>
+                            <a href="tfg.html">TFG</a>
+                        </li>
+                        <li>
+                            <a href="libros.html">Literatura</a>
+                        </li>
+                    </ul>
+                </nav>
+                <header>
+                    <section>
+                        <h2>Mis Géneros Literarios Favoritos</h2>
+                        <p>A lo largo de los años, he desarrollado un amor por varios
+                            géneros literarios, incluyendo ciencia
+                            ficción, fantasía, misterio y romance. Cada uno tiene su
+                            propio encanto y me ha llevado a explorar una
+                            amplia variedad de libros.</p>
+                    </section>
+                </header>
+                <main>
+                    <table>
+                        <caption>Lista de mis libros favoritos</caption>
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Autor</th>
+                                <th>Año de Salida</th>
+                                <th>Calificación</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1984</td>
+                                <td>George Orwell</td>
+                                <td>1949</td>
+                                <td>
+                                    <p>&#9733;</p>
+                                    <p>&#9733;</p>
+                                    <p>&#9733;</p>
+                                    <p>&#9733;</p>
+                                    <p>&#9734;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Juego de Tronos</td>
+                                <td>George R.R. Martin</td>
+                                <td>1996</td>
+                                <td>
+                                    <p>&#9733;</p>
+                                    <p>&#9733;</p>
+                                    <p>&#9733;</p>
+                                    <p>&#9733;</p>
+                                    <p>&#9733;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>El Código Da Vinci</td>
+                                <td>Dan Brown</td>
+                                <td>2003</td>
+                                <td>
+
+                                    <p>&#9733;</p>
+                                    <p>&#9733;</p>
+                                    <p>&#9733;</p>
+                                    <p>&#9733;</p>
+                                    <p>&#9733;</p>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <article>
+                        <h2>Lectura actual</h2>
+                        <h3>Ciudad de Jade - Fonda Lee</h3>
+                        <section>
+                            <img src="./multimedia/jade.jpg" alt="Ciudad de jade" />
+                            <p>El jade es el alma de la isla de Kekon. Durante siglos,
+                                los kekoneses lo han extraído de las
+                                entrañas
+                                de la tierra, han comerciado con él, lo han robado y han
+                                matado por él. Honorables guerreros
+                                huesos
+                                verdes como la familia Kaul lo han empleado para
+                                aumentar sus habilidades mágicas y defender la
+                                isla
+                                de las invasiones extranjeras.
+                                Ahora la guerra ha terminado y una nueva generación de
+                                la familia Kaul compite por el control de
+                                la
+                                floreciente capital de Kekon. Solo les preocupa proteger
+                                a los suyos, monopolizar el mercado de
+                                jade
+                                y defender los distritos que se hallan bajo su
+                                protección. En estos tiempos de cambio no hay
+                                lugar
+                                para las antiguas tradiciones.
+                                Cuando aparece en las calles una nueva y poderosa droga
+                                que permite a cualquiera (incluso a los
+                                extranjeros) usar el jade, la creciente tensión entre la
+                                familia Kaul y sus rivales, la familia
+                                Ayt,
+                                estalla y transforma la ciudad en un campo de batalla.
+                                El resultado de esta guerra de clanes
+                                decidirá el destino de todos los huesos verdes y el
+                                futuro de la propia Kekon.</p>
+                        </section>
+                    </article>
+                    <article>
+                        <h2>Mejor lectura</h2>
+                        <h3>El Camino de los Reyes - Brandon Sanderson</h3>
+                        <section>
+                            <p>El camino de los reyes es el primer volumen de «El
+                                Archivo de las Tormentas», el resultado de más
+                                de
+                                una
+                                década de construcción y escritura de universos,
+                                convertido en una obra maestra de la fantasía
+                                contemporánea en diez volúmenes. Con ella, Brandon
+                                Sanderson se postula como el autor del género
+                                que
+                                más
+                                lectores está ganando en todo el mundo.
+
+                                Anhelo los días previos a la Última Desolación.
+
+                                Los días en que los Heraldos nos abandonaron y los
+                                Caballeros Radiantes se giraron en nuestra
+                                contra. Un
+                                tiempo en que aún había magia en el mundo y honor en el
+                                corazón de los hombres.
+
+                                El mundo fue nuestro, pero lo perdimos. Probablemente no
+                                hay nada más estimulante para las almas
+                                de
+                                los
+                                hombres que la victoria.
+
+                                ¿O tal vez fue la victoria una ilusión durante todo ese
+                                tiempo? ¿Comprendieron nuestros enemigos
+                                que
+                                cuanto más duramente luchaban, más resistíamos nosotros?
+                                Quizá vieron que el fuego y el martillo
+                                tan
+                                solo producían mejores espadas. Pero ignoraron el acero
+                                durante el tiempo suficiente para
+                                oxidarse.
+
+                                Hay cuatro personas a las que observamos. La primera es
+                                el médico, quien dejó de curar para
+                                convertirse
+                                en soldado durante la guerra más brutal de nuestro
+                                tiempo. La segunda es el asesino, un homicida
+                                que
+                                llora siempre que mata. La tercera es la mentirosa, una
+                                joven que viste un manto de erudita
+                                sobre un
+                                corazón de ladrona. Por último está el alto príncipe, un
+                                guerrero que mira al pasado mientras
+                                languidece
+                                su sed de guerra.
+
+                                El mundo puede cambiar. La potenciación y el uso de las
+                                esquirlas pueden aparecer de nuevo, la
+                                magia
+                                de
+                                los días pasados puede volver a ser nuestra. Esas cuatro
+                                personas son la clave.
+
+                                Una de ellas nos redimirá. Y una de ellas nos destruirá.</p>
+                            <img src="./multimedia/camino.jpg"
+                                alt="El camino de los reyes" />
+                        </section>
+                    </article>
+                </main>
+                <footer>
+                    <p>Daniel Ferreira Gómez - UO277603</p>
+                    <p>Universidad de Oviedo - Lenguajes y Estándares de la Web</p>
+                </footer>
+            </body>
+        </content>
+    </page>
+    <page>
+        <url>./tfg.html</url>
+        <content>
+            <body>
+                <nav>
+                    <h1>Mi Trabajo de Fin de Grado</h1>
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="aficiones.html">Aficiones</a>
+                        </li>
+                        <li>
+                            <a href="tfg.html">TFG</a>
+                        </li>
+                        <li>
+                            <a href="libros.html">Literatura</a>
+                        </li>
+                    </ul>
+                </nav>
+                <header>
+                    <section>
+                        <h1>Resumen de la Aplicación</h1>
+                        <p>En mi Trabajo de Fin de Grado, desarrollé una aplicación web
+                            similar a Kahoot. La aplicación permite a
+                            los usuarios crear y participar en cuestionarios
+                            interactivos en tiempo real. Los usuarios pueden crear
+                            sus propios cuestionarios y competir en ellos, con una
+                            puntuación en tiempo real y una experiencia de
+                            juego divertida y educativa.</p>
+                    </section>
+                    <img src="./multimedia/app.png"
+                        alt="Captura de pantalla de la aplicación" />
+                </header>
+
+                <section>
+                    <h2>Tecnologías usadas</h2>
+                    <aside>
+                        <img src="./multimedia/angular.png" alt="Logo de Angular" />
+                        <img src="./multimedia/node.png" alt="Logo de Node.js" />
+                        <img src="./multimedia/prisma.png" alt="Logo de Prisma ORM" />
+                        <img src="./multimedia/socket.png" alt="Logo de Socket.io" />
+                        <img src="./multimedia/bootstrap.png"
+                            alt="Logo de bootstrap" />
+                        <img src="./multimedia/css.png" alt="Logo de css" />
+                        <img src="./multimedia/html.png" alt="Logo de html" />
+                        <img src="./multimedia/express.png" alt="Logo de express"/>
+                        <img src="./multimedia/postgres.png"
+                            alt="Logo de postgresql"/>
+                        <img src="./multimedia/postman.png" alt="Logo de postman"/>
+                        <img src="./multimedia/visual.png"
+                            alt="Logo de visual studio code"/>
+                        <img src="./multimedia/json.png" alt="Logo de json"/>
+                        <img src="./multimedia/ts.png" alt="Logo de typescript"/>
+                        <table>
+                            <caption>Lista de Tecnologías y sus Descripciones</caption>
+                            <thead>
+                                <tr>
+                                    <th>Nombre de la Tecnología</th>
+                                    <th>Autor</th>
+                                    <th>Uso Principal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Angular</td>
+                                    <td>Google</td>
+                                    <td>Desarrollo de aplicaciones web frontend</td>
+                                </tr>
+                                <tr>
+                                    <td>Node.js</td>
+                                    <td>Node.js Foundation</td>
+                                    <td>Entorno de ejecución de JavaScript en el
+                                        lado del servidor</td>
+                                </tr>
+                                <tr>
+                                    <td>Prisma ORM</td>
+                                    <td>Prisma</td>
+                                    <td>Mapeo objeto-relacional (ORM) para
+                                        aplicaciones Node.js</td>
+                                </tr>
+                                <tr>
+                                    <td>Socket.io</td>
+                                    <td>Socket.io</td>
+                                    <td>Comunicación bidireccional en tiempo real
+                                        entre el cliente y el servidor</td>
+                                </tr>
+                                <tr>
+                                    <td>Bootstrap</td>
+                                    <td>Twitter</td>
+                                    <td>Diseño y maquetación de sitios web
+                                        responsivos</td>
+                                </tr>
+                                <tr>
+                                    <td>CSS</td>
+                                    <td>W3C</td>
+                                    <td>Estilización y diseño de páginas web</td>
+                                </tr>
+                                <tr>
+                                    <td>HTML</td>
+                                    <td>W3C</td>
+                                    <td>Estructura y contenido de páginas web</td>
+                                </tr>
+                                <tr>
+                                    <td>Express.js</td>
+                                    <td>TJ Holowaychuk</td>
+                                    <td>Framework web para aplicaciones Node.js</td>
+                                </tr>
+                                <tr>
+                                    <td>PostgreSQL</td>
+                                    <td>PostgreSQL Global Development Group</td>
+                                    <td>Sistema de gestión de bases de datos
+                                        relacional</td>
+                                </tr>
+                                <tr>
+                                    <td>Postman</td>
+                                    <td>Postman</td>
+                                    <td>Pruebas de API y desarrollo de API</td>
+                                </tr>
+                                <tr>
+                                    <td>Visual Studio Code</td>
+                                    <td>Microsoft</td>
+                                    <td>Editor de código fuente multiplataforma</td>
+                                </tr>
+                                <tr>
+                                    <td>JSON</td>
+                                    <td>Douglas Crockford</td>
+                                    <td>Formato de intercambio de datos</td>
+                                </tr>
+                                <tr>
+                                    <td>TypeScript</td>
+                                    <td>Microsoft</td>
+                                    <td>Superset de JavaScript con tipos estáticos</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </aside>
+                </section>
+                <main>
+                    <article>
+                        <img src="./multimedia/angular.png" alt="Logo de Angular"/>
+                        <h2>Angular</h2>
+                        <p>Angular es un framework de desarrollo frontend
+                            desarrollado por Google. Utilicé Angular para
+                            crear la interfaz de usuario de mi aplicación, lo que me
+                            permitió crear una experiencia de
+                            usuario fluida y atractiva.</p>
+                    </article>
+                    <article>
+                        <img src="./multimedia/node.png" alt="Logo de Node.js"/>
+                        <h2>Node.js</h2>
+                        <p>Node.js es un entorno de ejecución de JavaScript en
+                            el lado del servidor. Lo utilicé para crear
+                            el backend de mi aplicación, gestionar la lógica del
+                            servidor y facilitar la comunicación en
+                            tiempo real entre los usuarios.</p>
+                    </article>
+                    <article>
+                        <img src="./multimedia/prisma.png" alt="Logo de Prisma"/>
+                        <h2>Prisma</h2>
+                        <p>Node.js es un entorno de ejecución de JavaScript en
+                            el lado del servidor. Lo utilicé para crear
+                            el backend de mi aplicación, gestionar la lógica del
+                            servidor y facilitar la comunicación en
+                            tiempo real entre los usuarios.</p>
+                    </article>
+                    <article>
+                        <img src="./multimedia/socket.png" alt="Logo de Socketio"/>
+                        <h2>Socket.io</h2>
+                        <p>Node.js es un entorno de ejecución de JavaScript en
+                            el lado del servidor. Lo utilicé para crear
+                            el backend de mi aplicación, gestionar la lógica del
+                            servidor y facilitar la comunicación en
+                            tiempo real entre los usuarios.</p>
+                    </article>
+                    <article>
+                        <img src="./multimedia/bootstrap.png"
+                            alt="Logo de bootstrap"/>
+                        <h2>Bootstrap</h2>
+                        <p>Node.js es un entorno de ejecución de JavaScript en
+                            el lado del servidor. Lo utilicé para crear
+                            el backend de mi aplicación, gestionar la lógica del
+                            servidor y facilitar la comunicación en
+                            tiempo real entre los usuarios.</p>
+                    </article>
+                    <article>
+                        <img src="./multimedia/css.png" alt="Logo de css"/>
+                        <h2>CSS</h2>
+                        <p>Node.js es un entorno de ejecución de JavaScript en
+                            el lado del servidor. Lo utilicé para crear
+                            el backend de mi aplicación, gestionar la lógica del
+                            servidor y facilitar la comunicación en
+                            tiempo real entre los usuarios.</p>
+                    </article>
+                    <article>
+                        <img src="./multimedia/html.png" alt="Logo de HTML"/>
+                        <h2>HTML</h2>
+                        <p>Node.js es un entorno de ejecución de JavaScript en
+                            el lado del servidor. Lo utilicé para crear
+                            el backend de mi aplicación, gestionar la lógica del
+                            servidor y facilitar la comunicación en
+                            tiempo real entre los usuarios.</p>
+                    </article>
+                    <article>
+                        <img src="./multimedia/express.png" alt="Logo de Express"/>
+                        <h2>Express</h2>
+                        <p>Node.js es un entorno de ejecución de JavaScript en
+                            el lado del servidor. Lo utilicé para crear
+                            el backend de mi aplicación, gestionar la lógica del
+                            servidor y facilitar la comunicación en
+                            tiempo real entre los usuarios.</p>
+                    </article>
+                    <article>
+                        <img src="./multimedia/postgres.png"
+                            alt="Logo de Postgresql"/>
+                        <h2>Postgresql</h2>
+                        <p>Node.js es un entorno de ejecución de JavaScript en
+                            el lado del servidor. Lo utilicé para crear
+                            el backend de mi aplicación, gestionar la lógica del
+                            servidor y facilitar la comunicación en
+                            tiempo real entre los usuarios.</p>
+                    </article>
+                    <article>
+                        <img src="./multimedia/visual.png"
+                            alt="Logo de Visual Studio Code"/>
+                        <h2>Visual Studio Code</h2>
+                        <p>Node.js es un entorno de ejecución de JavaScript en
+                            el lado del servidor. Lo utilicé para crear
+                            el backend de mi aplicación, gestionar la lógica del
+                            servidor y facilitar la comunicación en
+                            tiempo real entre los usuarios.</p>
+                    </article>
+                    <article>
+                        <img src="./multimedia/json.png" alt="Logo de Json"/>
+                        <h2>JSON</h2>
+                        <p>Node.js es un entorno de ejecución de JavaScript en
+                            el lado del servidor. Lo utilicé para crear
+                            el backend de mi aplicación, gestionar la lógica del
+                            servidor y facilitar la comunicación en
+                            tiempo real entre los usuarios.</p>
+                    </article>
+                    <article>
+                        <img src="./multimedia/ts.png" alt="Logo de typescript"/>
+                        <h2>TypeScript</h2>
+                        <p>Node.js es un entorno de ejecución de JavaScript en
+                            el lado del servidor. Lo utilicé para crear
+                            el backend de mi aplicación, gestionar la lógica del
+                            servidor y facilitar la comunicación en
+                            tiempo real entre los usuarios.</p>
+                    </article>
+                </main>
+
+                <footer>
+                    <p>Daniel Ferreira Gómez - UO277603</p>
+                    <p>Universidad de Oviedo - Lenguajes y Estándares de la Web</p>
+                </footer>
+            </body>
+        </content>
+    </page>
+</siteMap>

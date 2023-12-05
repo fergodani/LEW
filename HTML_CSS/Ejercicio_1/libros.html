@@ -9,7 +9,11 @@
         <link rel="stylesheet" href="./css/flex.css">
         <link rel="stylesheet" href="./css/tabla.css">
         <link rel="stylesheet" href="./css/libros.css">
-        <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Lexend Deca'
+            rel='stylesheet'>
+        <script
+            src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="./javascript/main.js"></script>
     </head>
 
     <body>
@@ -21,6 +25,8 @@
                 <li><a href="tfg.html">TFG</a></li>
                 <li><a href="libros.html">Literatura</a></li>
             </ul>
+            <input type="text" id="searchInput" placeholder="Buscar en el sitio">
+            <input type="button" value="Buscar" onclick="xml.search()">
         </nav>
         <header>
             <section>
