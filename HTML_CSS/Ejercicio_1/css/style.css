@@ -87,3 +87,44 @@ aside img {
     margin: 1em;
 }
 
+input[type="text"] {
+    padding: 0.625em;
+    border: 0.0625em solid #ccc;
+    border-radius: 0.3125em;
+    font-size: 1em;
+    outline: none;
+    margin: 1em;
+}
+
+input[type="text"]:hover {
+    border-color: #555;
+}
+
+/* Estilo al enfocar el input */
+input[type="text"]:focus {
+    border-color: #555;
+    /* Cambia el color del borde al estar enfocado */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    /* Agrega una sombra al enfocar */
+}
+
+input[type="button"] {
+    padding: 0.625em  1.25em;
+    border: none;
+    border-radius: 0.3125em;
+    font-size: 1em;
+    background-color: #f3f3f3;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 1em;
+}
+
+input[type="button"]:hover {
+    background-color: #8b8b8b;
+    color: #f3f3f3;
+}
+
+input[type="button"]:active {
+    transform: translateY(0.0625em);
+}
