@@ -9,76 +9,26 @@ class XMLFile {
     this.bookIndex = 1;
   }
 
-  async readLibrary() {
-    for (let i = 0; i < 2; i++) {
-      let url_base = "./ebooks/book" + i + "/"
-      const data = await this.readFile(url_base);
-      console.log(data.getElementsByTagName('dc:Title'))
-      const title = data.getElementsByTagName('dc:Title')[0].innerHTML
-      const type = data.firstElementChild.firstElementChild.firstElementChild.children[1].innerHTML
-      const author = data.firstElementChild.firstElementChild.firstElementChild.children[3].innerHTML
-      const cover = url_base + data.firstElementChild.children[1].children[0].attributes.getNamedItem("href").value
-      const sortedContent = data.firstElementChild.lastElementChild.children
-      const content = data.firstElementChild.children[1].children
-      const book = new Book(title, author, "", "", type, cover);
-      book.setSortedContent(sortedContent);
-      book.setContent(content);
-      this.books.push(book);
-    }
-    this.drawBooks()
-  }
-
-  readFile(url_base) {
-    return new Promise((resolve, reject) => {
-      $.ajax({
-        dataType: "xml",
-        url: url_base + "book.xml",
-        method: 'GET',
-        success: function (data) {
-          resolve(data);
-        },
-        error: function(error) {
-          reject(error);
-        }
-      })
-    })
-  }
-
-  drawBooks() {
-    $("main").html("");
-    let index = 0;
-    this.books.forEach((book) => {
-      $("main").append(
-        "<article><img src='" + book.content.get("cover.jpg") + "'/><h2>" + 
-        book.title + "</h2><p>" + book.author + 
-        "</p><button onclick='xml.books["+index+
-        "].viewDetails()'>Detalles</button><button onclick='xml.books["+index+
-        "].readBook("+index+")'>Leer</button></article>"
-      )
-      $("main select").change(function(){
-        var option = $(this).val();
-        book.state = option;
-      })
-      index++;
-    })
-  }
-
   goBack() {
     $("main").show()
     $("header + button").hide()
+    $("aside").hide()
     $("section").hide()
     $("a").hide()
     $("h1").html("Mi Biblioteca")
     $("input").show();
+    $("section").remove();
     $("button + h2").show();
   }
 
   async leerArchivoTexto(files) {
-    console.log(files)
     const book = new Book();
+    let isXML = false;
+    let isAllContent = false;
     for (const file of files) {
       const data = await this.readBookFile(file);
       if(file.type == "text/xml") {
+        isXML = true;
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(data, 'application/xml')
         const title = xmlDoc.getElementsByTagName('dc:Title')[0].innerHTML;
@@ -88,6 +38,10 @@ class XMLFile {
         const type = xmlDoc.getElementsByTagName('dc:Type')[0].innerHTML;
         const sortedContent = xmlDoc.firstElementChild.lastElementChild.children
         const manifest = xmlDoc.firstElementChild.children[1].children;
+
+        if (manifest.length == files.length - 1)
+          isAllContent = true;
+
         book.setTitle(title);
         book.setAuthor(author);
         book.setSubject(subject);
@@ -99,9 +53,15 @@ class XMLFile {
           book.content.set(file.name, data)
       }
     }
-    $("input").val('')
-    this.books.push(book)
-    this.drawBooks();
+    if (!isXML || !isAllContent) {
+      $("main").after("<p>Por favor, sube los libros correctamente</p>")
+    }else {
+      $("main + p").remove()
+      $("input").val('')
+      this.books.push(book)
+      this.drawBooks();
+    }
+    
   };
 
   readBookFile(file) {
@@ -116,9 +76,24 @@ class XMLFile {
         lector.readAsText(file)
     })
   }
+
+  drawBooks() {
+    $("main").html("");
+    let index = 0;
+    this.books.forEach((book) => {
+      const cover = book.content.get("cover.jpg")
+      $("main").append(
+        "<article><img alt='" + cover + "' src='" + cover + "'/><h2>" + 
+        book.title + "</h2><p>" + book.author + 
+        "</p><button onclick='xml.books["+index+
+        "].viewDetails()'>Detalles</button><button onclick='xml.books["+index+
+        "].readBook("+index+")'>Leer</button></article>"
+      )
+      index++;
+    })
+  }
 }
 
-"use strict"
 class Book {
 
   constructor() {
@@ -177,36 +152,41 @@ class Book {
     $("main").hide()
     $("input").hide();
     $("button + h2").hide();
-    $("h1").html(this.title)
-    $("section").append("<img src='" + this.content.get("cover.jpg") + "' >")
+    $("aside").after("<section></section>")
+    $("main + p").remove()
+    const cover = this.content.get("cover.jpg")
+    $("section").append("<img alt='" + cover + "' src='" + cover + "' >")
     $("section").append(
-      "<ul>" +
-      "<li>Autor: " + this.author + "</li>" +
-      "<li>Género: " + this.subject + "</li>" +
-      "<li>Fecha de publicación: " + this.date + "</li>" +
-      "<li>Tipo: " + this.type + "</li>" +
-      "</ul>"
+      "<h2>" + this.title + "</h2>" +
+      "<p><b>Autor:</b> " + this.author + "</p>" +
+      "<p><b>Género:</b> " + this.subject + "</p>" +
+      "<p><b>Fecha de publicación:</b> " + this.date + "</p>" +
+      "<p><b>Tipo:</b> " + this.type + "</p>"
     )
   }
 
   readBook() {
-    $("section").html("<ul></ul>")
-    $("section").show()
+    $("aside").html("<ul></ul>")
+    $("section").empty()
     $("header + button").show()
+    $("section").show()
+    $("aside").show()
     $("input").hide();
     $("main").hide()
     $("button + h2").hide();
     $("a").show()
     $("h1").html(this.title)
+    $("aside").after("<section></section>")
+    $("main + p").remove()
 
     for (let item of this.sortedContent) {
       const id = item.attributes[0].value
       const src = this.manifest.namedItem(id).attributes[1].value
       const type = this.manifest.namedItem(id).attributes[2].value
       if (type == "image/jpg") {
-        $("section").append("<img src='" + this.content.get(src) + "' >")
+        $("section").append("<img alt='" + src + "' src='" + this.content.get(src) + "' >")
       } else {
-        $("section ul").append("<li><a href=#" + id + ">" + id + "</a></li>")
+        $("aside ul").append("<li><a href=#" + id + ">" + id + "</a></li>")
               $("section").append("<h2 id=" + id + ">" + id + "</h2>")
               $("section").append(
                 "<p>" + this.content.get(src) + "</p>"
@@ -217,4 +197,3 @@ class Book {
 }
 
 let xml = new XMLFile()
-//xml.readLibrary()

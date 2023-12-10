@@ -1,13 +1,14 @@
 table {
     width: 100%;
+    align-self: center;
     border-collapse: collapse;
-    border: 1px solid #ccc;
+    border: 0.1em solid #ccc;
     margin: 1em;
 }
 
 th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
+    border: 0.1em solid #ccc;
+    padding: 1em;
     text-align: left;
 }
 
@@ -20,11 +21,18 @@ td {
     background-color: #f9f9f9;
 }
 
+td p {
+    display: inline-block;
+    color: #ffcc00;
+    padding: 0 0.2em;
+}
+
+
 caption {
     background-color: #49392a;
     color: white;
-    font-size: 18px;
-    padding: 10px;
+    font-size: 1.2em;
+    padding: 0.5em;
     text-align: center;
 }
 

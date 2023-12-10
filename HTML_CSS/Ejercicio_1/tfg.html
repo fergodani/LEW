@@ -1,263 +1,185 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mi Trabajo de Fin de Grado</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="stylesheet" href="./css/tfg.css">
-        <link rel="stylesheet" href="./css/tabla.css">
-        <link rel="stylesheet" href="./css/card.css">
-        <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Trabajo de Fin de Grado</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/flex.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/tabla.css">
+    <link rel="stylesheet" href="./css/card.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300&display=swap" rel="stylesheet">
+</head>
 
-    <body>
-        <nav>
-            <h1>Mi Trabajo de Fin de Grado</h1>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="aficiones.html">Aficiones</a></li>
-                <li><a href="tfg.html">TFG</a></li>
-                <li><a href="libros.html">Literatura</a></li>
-            </ul>
-        </nav>
-        <header>
-            <section>
-                <h1>Resumen de la Aplicación</h1>
-                <p>En mi Trabajo de Fin de Grado, desarrollé una aplicación web
-                    similar a Kahoot. La aplicación permite a
-                    los usuarios crear y participar en cuestionarios
-                    interactivos en tiempo real. Los usuarios pueden crear
-                    sus propios cuestionarios y competir en ellos, con una
-                    puntuación en tiempo real y una experiencia de
-                    juego divertida y educativa.</p>
-            </section>
-            <img src="./multimedia/app.png"
-                alt="Captura de pantalla de la aplicación">
-        </header>
+<body>
+    <header>
+        <h1>Mi Trabajo de Fin de Grado</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="aficiones.html">Aficiones</a>
+        <a href="tfg.html">TFG</a>
+        <a href="libros.html">Literatura</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Resumen de la Aplicación</h2>
+            <p>En mi Trabajo de Fin de Grado, desarrollé una aplicación web
+                similar a Kahoot. La aplicación permite a
+                los usuarios crear y participar en cuestionarios
+                interactivos en tiempo real. Los usuarios pueden crear
+                sus propios cuestionarios y competir en ellos, con una
+                puntuación en tiempo real y una experiencia de
+                juego divertida y educativa.</p>
+            <img src="./multimedia/app.png" alt="Captura de pantalla de la aplicación">
+        </section>
 
         <section>
             <h2>Tecnologías usadas</h2>
-            <aside>
-                <img src="./multimedia/angular.png" alt="Logo de Angular">
-                <img src="./multimedia/node.png" alt="Logo de Node.js">
-                <img src="./multimedia/prisma.png" alt="Logo de Prisma ORM">
-                <img src="./multimedia/socket.png" alt="Logo de Socket.io">
-                <img src="./multimedia/bootstrap.png"
-                    alt="Logo de bootstrap">
-                <img src="./multimedia/css.png" alt="Logo de css">
-                <img src="./multimedia/html.png" alt="Logo de html">
-                <img src="./multimedia/express.png" alt="Logo de express">
-                <img src="./multimedia/postgres.png"
-                    alt="Logo de postgresql">
-                <img src="./multimedia/postman.png" alt="Logo de postman">
-                <img src="./multimedia/visual.png"
-                    alt="Logo de visual studio code">
-                <img src="./multimedia/json.png" alt="Logo de json">
-                <img src="./multimedia/ts.png" alt="Logo de typescript">
-                <table>
-                    <caption>Lista de Tecnologías y sus Descripciones</caption>
-                    <thead>
-                        <tr>
-                            <th>Nombre de la Tecnología</th>
-                            <th>Autor</th>
-                            <th>Uso Principal</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Angular</td>
-                            <td>Google</td>
-                            <td>Desarrollo de aplicaciones web frontend</td>
-                        </tr>
-                        <tr>
-                            <td>Node.js</td>
-                            <td>Node.js Foundation</td>
-                            <td>Entorno de ejecución de JavaScript en el
-                                lado del servidor</td>
-                        </tr>
-                        <tr>
-                            <td>Prisma ORM</td>
-                            <td>Prisma</td>
-                            <td>Mapeo objeto-relacional (ORM) para
-                                aplicaciones Node.js</td>
-                        </tr>
-                        <tr>
-                            <td>Socket.io</td>
-                            <td>Socket.io</td>
-                            <td>Comunicación bidireccional en tiempo real
-                                entre el cliente y el servidor</td>
-                        </tr>
-                        <tr>
-                            <td>Bootstrap</td>
-                            <td>Twitter</td>
-                            <td>Diseño y maquetación de sitios web
-                                responsivos</td>
-                        </tr>
-                        <tr>
-                            <td>CSS</td>
-                            <td>W3C</td>
-                            <td>Estilización y diseño de páginas web</td>
-                        </tr>
-                        <tr>
-                            <td>HTML</td>
-                            <td>W3C</td>
-                            <td>Estructura y contenido de páginas web</td>
-                        </tr>
-                        <tr>
-                            <td>Express.js</td>
-                            <td>TJ Holowaychuk</td>
-                            <td>Framework web para aplicaciones Node.js</td>
-                        </tr>
-                        <tr>
-                            <td>PostgreSQL</td>
-                            <td>PostgreSQL Global Development Group</td>
-                            <td>Sistema de gestión de bases de datos
-                                relacional</td>
-                        </tr>
-                        <tr>
-                            <td>Postman</td>
-                            <td>Postman</td>
-                            <td>Pruebas de API y desarrollo de API</td>
-                        </tr>
-                        <tr>
-                            <td>Visual Studio Code</td>
-                            <td>Microsoft</td>
-                            <td>Editor de código fuente multiplataforma</td>
-                        </tr>
-                        <tr>
-                            <td>JSON</td>
-                            <td>Douglas Crockford</td>
-                            <td>Formato de intercambio de datos</td>
-                        </tr>
-                        <tr>
-                            <td>TypeScript</td>
-                            <td>Microsoft</td>
-                            <td>Superset de JavaScript con tipos estáticos</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </aside>
+            <table>
+                <caption>Lista de Tecnologías y sus Descripciones</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre de la Tecnología</th>
+                        <th>Autor</th>
+                        <th>Uso Principal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Angular</td>
+                        <td>Google</td>
+                        <td>Desarrollo de aplicaciones web frontend</td>
+                    </tr>
+                    <tr>
+                        <td>Node.js</td>
+                        <td>Node.js Foundation</td>
+                        <td>Entorno de ejecución de JavaScript en el
+                            lado del servidor</td>
+                    </tr>
+                    <tr>
+                        <td>Prisma ORM</td>
+                        <td>Prisma</td>
+                        <td>Mapeo objeto-relacional (ORM) para
+                            aplicaciones Node.js</td>
+                    </tr>
+                    <tr>
+                        <td>Socket.io</td>
+                        <td>Socket.io</td>
+                        <td>Comunicación bidireccional en tiempo real
+                            entre el cliente y el servidor</td>
+                    </tr>
+                    <tr>
+                        <td>Bootstrap</td>
+                        <td>Twitter</td>
+                        <td>Diseño y maquetación de sitios web
+                            responsivos</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>W3C</td>
+                        <td>Estilización y diseño de páginas web</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>W3C</td>
+                        <td>Estructura y contenido de páginas web</td>
+                    </tr>
+                    <tr>
+                        <td>Express.js</td>
+                        <td>TJ Holowaychuk</td>
+                        <td>Framework web para aplicaciones Node.js</td>
+                    </tr>
+                    <tr>
+                        <td>PostgreSQL</td>
+                        <td>PostgreSQL Global Development Group</td>
+                        <td>Sistema de gestión de bases de datos
+                            relacional</td>
+                    </tr>
+                    <tr>
+                        <td>Postman</td>
+                        <td>Postman</td>
+                        <td>Pruebas de API y desarrollo de API</td>
+                    </tr>
+                    <tr>
+                        <td>Visual Studio Code</td>
+                        <td>Microsoft</td>
+                        <td>Editor de código fuente multiplataforma</td>
+                    </tr>
+                    <tr>
+                        <td>JSON</td>
+                        <td>Douglas Crockford</td>
+                        <td>Formato de intercambio de datos</td>
+                    </tr>
+                    <tr>
+                        <td>TypeScript</td>
+                        <td>Microsoft</td>
+                        <td>Superset de JavaScript con tipos estáticos</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-        <main>
-            <article>
-                <img src="./multimedia/angular.png" alt="Logo de Angular">
-                <h2>Angular</h2>
-                <p>Angular es un framework de desarrollo frontend
-                    desarrollado por Google. Utilicé Angular para
-                    crear la interfaz de usuario de mi aplicación, lo que me
-                    permitió crear una experiencia de
-                    usuario fluida y atractiva.</p>
-            </article>
-            <article>
-                <img src="./multimedia/node.png" alt="Logo de Node.js">
-                <h2>Node.js</h2>
-                <p>Node.js es un entorno de ejecución de JavaScript en
-                    el lado del servidor. Lo utilicé para crear
-                    el backend de mi aplicación, gestionar la lógica del
-                    servidor y facilitar la comunicación en
-                    tiempo real entre los usuarios.</p>
-            </article>
-            <article>
-                <img src="./multimedia/prisma.png" alt="Logo de Prisma">
-                <h2>Prisma</h2>
-                <p>Node.js es un entorno de ejecución de JavaScript en
-                    el lado del servidor. Lo utilicé para crear
-                    el backend de mi aplicación, gestionar la lógica del
-                    servidor y facilitar la comunicación en
-                    tiempo real entre los usuarios.</p>
-            </article>
-            <article>
-                <img src="./multimedia/socket.png" alt="Logo de Socketio">
-                <h2>Socket.io</h2>
-                <p>Node.js es un entorno de ejecución de JavaScript en
-                    el lado del servidor. Lo utilicé para crear
-                    el backend de mi aplicación, gestionar la lógica del
-                    servidor y facilitar la comunicación en
-                    tiempo real entre los usuarios.</p>
-            </article>
-            <article>
-                <img src="./multimedia/bootstrap.png"
-                    alt="Logo de bootstrap">
-                <h2>Bootstrap</h2>
-                <p>Node.js es un entorno de ejecución de JavaScript en
-                    el lado del servidor. Lo utilicé para crear
-                    el backend de mi aplicación, gestionar la lógica del
-                    servidor y facilitar la comunicación en
-                    tiempo real entre los usuarios.</p>
-            </article>
-            <article>
-                <img src="./multimedia/css.png" alt="Logo de css">
-                <h2>CSS</h2>
-                <p>Node.js es un entorno de ejecución de JavaScript en
-                    el lado del servidor. Lo utilicé para crear
-                    el backend de mi aplicación, gestionar la lógica del
-                    servidor y facilitar la comunicación en
-                    tiempo real entre los usuarios.</p>
-            </article>
-            <article>
-                <img src="./multimedia/html.png" alt="Logo de HTML">
-                <h2>HTML</h2>
-                <p>Node.js es un entorno de ejecución de JavaScript en
-                    el lado del servidor. Lo utilicé para crear
-                    el backend de mi aplicación, gestionar la lógica del
-                    servidor y facilitar la comunicación en
-                    tiempo real entre los usuarios.</p>
-            </article>
-            <article>
-                <img src="./multimedia/express.png" alt="Logo de Express">
-                <h2>Express</h2>
-                <p>Node.js es un entorno de ejecución de JavaScript en
-                    el lado del servidor. Lo utilicé para crear
-                    el backend de mi aplicación, gestionar la lógica del
-                    servidor y facilitar la comunicación en
-                    tiempo real entre los usuarios.</p>
-            </article>
-            <article>
-                <img src="./multimedia/postgres.png"
-                    alt="Logo de Postgresql">
-                <h2>Postgresql</h2>
-                <p>Node.js es un entorno de ejecución de JavaScript en
-                    el lado del servidor. Lo utilicé para crear
-                    el backend de mi aplicación, gestionar la lógica del
-                    servidor y facilitar la comunicación en
-                    tiempo real entre los usuarios.</p>
-            </article>
-            <article>
-                <img src="./multimedia/visual.png"
-                    alt="Logo de Visual Studio Code">
-                <h2>Visual Studio Code</h2>
-                <p>Node.js es un entorno de ejecución de JavaScript en
-                    el lado del servidor. Lo utilicé para crear
-                    el backend de mi aplicación, gestionar la lógica del
-                    servidor y facilitar la comunicación en
-                    tiempo real entre los usuarios.</p>
-            </article>
-            <article>
-                <img src="./multimedia/json.png" alt="Logo de Json">
-                <h2>JSON</h2>
-                <p>Node.js es un entorno de ejecución de JavaScript en
-                    el lado del servidor. Lo utilicé para crear
-                    el backend de mi aplicación, gestionar la lógica del
-                    servidor y facilitar la comunicación en
-                    tiempo real entre los usuarios.</p>
-            </article>
-            <article>
-                <img src="./multimedia/ts.png" alt="Logo de typescript">
-                <h2>TypeScript</h2>
-                <p>Node.js es un entorno de ejecución de JavaScript en
-                    el lado del servidor. Lo utilicé para crear
-                    el backend de mi aplicación, gestionar la lógica del
-                    servidor y facilitar la comunicación en
-                    tiempo real entre los usuarios.</p>
-            </article>
-        </main>
+    </main>
+    <aside>
+        <article>
+            <img src="./multimedia/angular.png" alt="Logo de Angular">
+            <h2>Angular</h2>
+        </article>
+        <article>
+            <img src="./multimedia/node.png" alt="Logo de Node.js">
+            <h2>Node.js</h2>
+        </article>
+        <article>
+            <img src="./multimedia/prisma.png" alt="Logo de Prisma">
+            <h2>Prisma</h2>
+        </article>
+        <article>
+            <img src="./multimedia/socket.png" alt="Logo de Socketio">
+            <h2>Socket.io</h2>
+        </article>
+        <article>
+            <img src="./multimedia/bootstrap.png" alt="Logo de bootstrap">
+            <h2>Bootstrap</h2>
+        </article>
+        <article>
+            <img src="./multimedia/css.png" alt="Logo de css">
+            <h2>CSS</h2>
+        </article>
+        <article>
+            <img src="./multimedia/html.png" alt="Logo de HTML">
+            <h2>HTML</h2>
+        </article>
+        <article>
+            <img src="./multimedia/express.png" alt="Logo de Express">
+            <h2>Express</h2>
+        </article>
+        <article>
+            <img src="./multimedia/postgres.png" alt="Logo de Postgresql">
+            <h2>Postgresql</h2>
+        </article>
+        <article>
+            <img src="./multimedia/visual.png" alt="Logo de Visual Studio Code">
+            <h2>Visual Studio Code</h2>
+        </article>
+        <article>
+            <img src="./multimedia/json.png" alt="Logo de Json">
+            <h2>JSON</h2>
+        </article>
+        <article>
+            <img src="./multimedia/ts.png" alt="Logo de typescript">
+            <h2>TypeScript</h2>
+        </article>
+    </aside>
 
-        <footer>
-            <p>Daniel Ferreira Gómez - UO277603</p>
-            <p>Universidad de Oviedo - Lenguajes y Estándares de la Web</p>
-        </footer>
-    </body>
+
+    <footer>
+        <p>Daniel Ferreira Gómez - UO277603</p>
+        <p>Universidad de Oviedo - Lenguajes y Estándares de la Web</p>
+    </footer>
+</body>
 
 </html>

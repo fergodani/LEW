@@ -1,5 +1,5 @@
 body {
-    background-color: &secondary;
+    background-color: #E4EFF0;
     margin: 0;
     padding: 0;
     font-family: "Lexend Deca", sans-serif;
@@ -8,8 +8,8 @@ body {
 }
 
 header {
-    background-color: &primary; 
-    color: &fontColor;
+    background-color: #002439; 
+    color: #ffffff;
     width: 100%;
     text-align: center;
 }

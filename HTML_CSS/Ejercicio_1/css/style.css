@@ -4,24 +4,24 @@ body {
     background-color: #dad7c4;
 }
 
+header {
+    background-color: #49392a;
+    color: #fff;
+    text-align: center;
+    padding: 1.25em;
+}
+
 nav {
     background-color: #49392a;
     color: #fff;
     text-align: center;
-    padding: 0.5em;
-}
-
-
-nav ul li {
-    display: inline;
-    margin-right: 1em;
-    padding: 1em;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 0.5em;
+    padding: 1em;
+    margin: 1em;
 }
 
 nav a:hover {
@@ -30,11 +30,11 @@ nav a:hover {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 2.5em;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.5em;
     color: #333;
 }
 
@@ -42,87 +42,48 @@ footer {
     background-color: #49392a;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 1em;
 }
 
-main, header {
+section {
     margin: 1em;
     background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    border-radius: 1%;
+    box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1);
+    padding: 2em;
 }
 
-header section {
-    padding: 4em;
-}
-
-header img:first-child {
+main section:first-child img{
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
-}
-
-header img:last-child {
-    width: 25%;
+    width: 12em;
     height: auto;
 }
 
-
-
-main > table + section article {
-    width: 100%;
-    border: none;
-    background-color: white;
-}
-
-main > table + section article > section {
-    margin-left: 2em;
-    margin-right: 2em;
-}
-
-main > table + section article > section img {
-    width: 20%;
-    height: auto;
-}
-
-
-main > table + section img {
-    width: 100%;
-}
-
-article h2 {
-    font-size: 24px;
-    margin-top: 0;
-}
-
-section > article > img{
-    max-width: 4em;
-    height: auto;
+ul {
+    list-style: none;
 }
 
 li img {
-    width: 30px;
-    height: 30px;
+    width: 2em;
+    height: 2em;
 }
 
 aside {
     margin: 1em;
     background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    border-radius: 1%;
+    box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1);
+    padding: 1em;
 }
 
-figure {
-    width: 70%;
-    margin: 20px 0;
+aside article img {
+    width: 50%;
+    height: auto;
 }
-
 
 aside img {
-    max-width: 4em;
+    width: 2em;
     height: auto;
-    margin: 10px;
+    margin: 1em;
 }
 

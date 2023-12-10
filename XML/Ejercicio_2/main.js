@@ -24,9 +24,11 @@ class XMLFile {
       const fontColor = xmlDoc.querySelectorAll("color")[2].innerHTML
       const authors = xmlDoc.querySelectorAll("autor")
       this.parseAuthors(authors)
-      this.html = this.html + "</main></body></html>"
+      this.html = this.html + "</main>"
       templateHTML = templateHTML.replace("&header", header)
       templateHTML = templateHTML.replace("&main", this.html)
+      templateHTML = templateHTML.split("<!--")[0] + templateHTML.split("<script>")[1].split("</script>")[1]
+      console.log(templateHTML)
       templateCSS = templateCSS.replace("&primary", colorPrimary)
       templateCSS = templateCSS.replace("&secondary", colorSecondary)
       templateCSS = templateCSS.replace("&fontColor", fontColor)
@@ -39,9 +41,9 @@ class XMLFile {
       const image = author.querySelector("imagen").innerHTML;
       const name = author.getAttribute("nombre");
       const birth = author.getAttribute("nacimiento");
-      this.html = this.html + "<section><article><img  alt='" + image + "' src='./multimedia/" + image + "'/><h2>" +
+      this.html = this.html + "<section><h2>"+name+"</h2><article><img  alt='" + image + "' src='./multimedia/" + image + "'/><h2>" +
         name + "</h2><p>" + birth +
-        "</p></article><section>";
+        "</p></article><section><h2>Libros</h2>";
       const books = author.querySelectorAll("libro")
       this.parseBooks(books)
       this.html = this.html + "</section></section>"
@@ -59,7 +61,7 @@ class XMLFile {
       const score = book.querySelector("puntuacion").innerHTML
       const isbn = book.querySelector("isbn").innerHTML
 
-      this.html = this.html + "<article><img src='./multimedia/" + cover + "'/><h2>" +
+      this.html = this.html + "<article><img alt='" + cover + "' src='./multimedia/" + cover + "'/><h2>" +
       title + "</h2>" +
       "<p><b>Editorial:</b> " + publisher + "</p>" +
       "<p><b>Fecha de salida:</b> " + date + "</p>" +
@@ -78,7 +80,7 @@ class XMLFile {
           if (xhr.status == 200)
             resolve(xhr.responseText)
           else
-            reject("Error al leer el fichero")
+            reject(`Error al leer el fichero: ${xhr.status}`)
         }
       };
       xhr.open('GET', url)

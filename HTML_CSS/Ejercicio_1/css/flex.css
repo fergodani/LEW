@@ -1,35 +1,17 @@
-main {
+nav {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2em;    
 }
 
-main section  {
+main > section:first-child  {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main section h2 + section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-main > table + section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header, main > table + section article > section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2em;
+main > section:last-child {
+    text-align: center;
 }
 
 header section {
@@ -38,11 +20,31 @@ header section {
     align-items: center;
 }
 
+main + aside {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 aside li {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1.5em;
+}
+
+table ~ article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+table ~ article section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
 }
 
 
