@@ -30,6 +30,8 @@ header, main > table + section article > section {
     flex-direction: row;
     align-items: center;
     gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 header section {
