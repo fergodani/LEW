@@ -5,7 +5,6 @@ article {
     border-radius: 2%;
     padding: 1em;
     border: 0.2em solid #333;
-    width: min-content;
-    height: fit-content;
+    max-width: 15em;
     background-color: #f0f0f0;
 }

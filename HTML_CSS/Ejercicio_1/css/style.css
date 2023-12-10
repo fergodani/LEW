@@ -53,6 +53,14 @@ section {
     padding: 2em;
 }
 
+nav section {
+    background-color: #49392a;
+    box-shadow: none;
+    margin: 0em;
+    padding: 0em;
+    align-self: center;
+}
+
 main section:first-child img{
     border-radius: 50%;
     width: 12em;
@@ -128,3 +136,14 @@ input[type="button"]:hover {
 input[type="button"]:active {
     transform: translateY(0.0625em);
 }
+
+h3 + img {
+    max-width: 100%;
+    height: auto;
+}
+
+section > img {
+    max-width: 35%;
+    height: auto;
+}
+

@@ -42,6 +42,6 @@ tbody section {
     align-items: center;
 }
 
-#overflow {
+h2 + section {
     overflow-x: auto;
 }
