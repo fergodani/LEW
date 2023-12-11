@@ -23,7 +23,7 @@ td {
 
 td p {
     display: inline-block;
-    color: #ffcc00;
+    font-size: larger;
     padding: 0 0.2em;
 }
 
