@@ -4,6 +4,10 @@ body {
     background-color: #dad7c4;
 }
 
+p {
+    line-height: 1.5em;
+}
+
 header {
     background-color: #49392a;
     color: #fff;
@@ -147,3 +151,7 @@ section > img {
     height: auto;
 }
 
+h2 + p, h3 + p {
+    text-align: center;
+    max-width: 30em;
+}
